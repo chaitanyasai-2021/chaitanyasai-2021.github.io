@@ -1,0 +1,687 @@
+<!DOCTYPE html>
+
+<!-- Main page -->
+
+<html lang="sv">
+  <head>
+    <title>Chaitanya Sai</title>
+    <meta charset="utf-8" />
+
+    <meta name="author" content="Chaitanya Sai N" />
+    <meta name="description" content="Main page of portfolio" />
+    <meta name="generator" content="Visual Studio Code" />
+    <meta name="keywords" content="About me. Experience. Programming" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+    <!-- Stop dates from being formatted on mobile as phone numbers -->
+    <meta name="format-detection" content="telephone=no" />
+
+    <link rel="stylesheet" href="styles/style.css?rnd=12345" />
+
+    <!-- Favicon -->
+    <link
+      rel="icon"
+      type="image/png"
+      href="assets/icons/favicon/favicon-96x96.png"
+      sizes="96x96"
+    />
+    <link
+      rel="icon"
+      type="image/svg+xml"
+      href="assets/icons/favicon/favicon.svg"
+    />
+    <link rel="shortcut icon" href="assets/icons/favicon/favicon.ico" />
+    <link
+      rel="apple-touch-icon"
+      sizes="180x180"
+      href="assets/icons/favicon/apple-touch-icon.png"
+    />
+    <meta name="apple-mobile-web-app-title" content="MyWebSite" />
+    <link rel="manifest" href="assets/icons/favicon/site.webmanifest" />
+  </head>
+
+  <body>
+    <header>
+      <div id="header-buttons">
+        <nav class="header-dropdown-navigation-list">
+          <button id="header-navigation-button">
+            <img
+              src="assets/icons/burger-menu-icon.svg"
+              alt="Navigering ikon"
+              class="icons"
+            />
+            <span>Navigation</span>
+          </button>
+          <ul id="header-navigation-list" class="nav-list">
+            <li><a href="http://viktorhogberg.com#about-me">About Me</a></li>
+            <li>
+              <a href="http://viktorhogberg.com#proficiencies">Skills</a>
+            </li>
+            <li>
+              <a href="http://viktorhogberg.com#experience">Erfarenheter</a>
+            </li>
+            <li><a href="http://viktorhogberg.com#education">Utbildning</a></li>
+            <li><a href="http://viktorhogberg.com#projects">Project</a></li>
+            <li class="spacer"></li>
+            <li>
+              <button id="theme-toggle-button" class="theme-toggle">
+                Ändra tema
+              </button>
+            </li>
+          </ul>
+        </nav>
+        <button
+          class="link-button-icon-right"
+          id="header-photography-portfolio-button"
+        >
+          <span>Fotografiportfölj</span>
+          <img
+            src="assets/icons/open-icon.svg"
+            alt="Portfolio ikon"
+            class="icons"
+          />
+        </button>
+      </div>
+    </header>
+
+    <div class="wrapper">
+      <aside class="sidebar">
+        <img
+          id="portrait"
+          src="assets/images/portrait.png"
+          alt="En bild på mig"
+        />
+        <h1>Chaitanya Sai Nutakki</h1>
+        <h3>Data Scientist</h3>
+        <h4 id="sidebar-location-info">📍 Hyderabad, India IN</h4>
+        <section>
+          <button class="link-button-icon-right" id="sidebar-resume-button">
+            <span>Visa CV</span>
+            <img
+              src="assets/icons/open-icon.svg"
+              alt="Öppna länk ikon"
+              class="icons"
+            />
+          </button>
+          <h3>Contact:</h3>
+          <div id="sidebar-social-buttons">
+            <button class="link-button" id="sidebar-social-email-button">
+              <img
+                src="assets/icons/email-icon.svg"
+                alt="Email ikon"
+                class="icons"
+              />
+              <span>Email</span>
+            </button>
+            <button class="link-button" id="sidebar-social-linkedin-button">
+              <img
+                src="assets/icons/linkedin-icon.svg"
+                alt="LinkedIn ikon"
+                class="icons"
+              />
+              <span>LinkedIn</span>
+            </button>
+            <button class="link-button" id="sidebar-social-github-button">
+              <img
+                src="assets/icons/github-icon.svg"
+                alt="Github ikon"
+                class="icons github-icon"
+              />
+              <span>Github</span>
+            </button>
+            <button class="link-button" id="sidebar-social-instagram-button">
+              <img
+                src="assets/icons/instagram-icon.svg"
+                alt="Instagram ikon"
+                class="icons"
+              />
+              <span>Instagram</span>
+            </button>
+          </div>
+        </section>
+      </aside>
+
+      <main class="about">
+        <section id="about-me">
+          <h2>About Me</h2>
+          <p>
+            Hey 👋, I'm Chaitanya Sai Nutakki! I am currently pursuing a
+            Bachelor of Technology in Computer Science and Engineering with a
+            specialization in Big Data at SRM University AP 🎓.
+          </p>
+          <p>
+            Aspiring to become a Data Scientist, I am also passionate about
+            UI/UX design and developing apps using Flutter. Additionally, I am
+            exploring Microsoft Azure to enhance my skills in cloud computing
+            and data services ☁️🔷. I am actively engaged in building projects
+            that focus on exploratory data analysis, machine learning, and
+            Flutter applications 💻🔥.
+          </p>
+          <p>
+            My research interests encompass natural language processing,
+            transfer learning, deep learning, and machine learning ✨. I thrive
+            on learning new topics in data science, visualizing data, and
+            conducting research 🤓. Sharing valuable insights and making an
+            impact to help others learn is something I truly enjoy 🧐. I am
+            always open to discussions, so feel free to reach out with questions
+            or concerns 💬.
+          </p>
+        </section>
+
+        <section id="proficiencies">
+          <h2>Skills</h2>
+          <div class="proficiencies">
+            <div class="proficiency-item">
+              <img
+                src="assets/logos/figma-logo.svg"
+                alt="figma-logo"
+                class="proficiency-logo"
+                id="figma-logo"
+              />
+              <div class="proficience-description">
+                <h4>Figma</h4>
+                <p>Designverktyg för UI/UX</p>
+              </div>
+            </div>
+            <div class="proficiency-item">
+              <img
+                src="assets/logos/java-logo.svg"
+                alt="java-logo"
+                class="proficiency-logo"
+                id="java-logo"
+              />
+              <div class="proficience-description">
+                <h4>Java</h4>
+                <p>Objektorienterad programmering</p>
+              </div>
+            </div>
+            <div class="proficiency-item">
+              <img
+                src="assets/logos/kotlin-logo.svg"
+                alt="kotlin-logo"
+                class="proficiency-logo"
+                id="kotlin-logo"
+              />
+              <div class="proficience-description">
+                <h4>Kotlin</h4>
+                <p>Apputveckling för Android</p>
+              </div>
+            </div>
+            <div class="proficiency-item">
+              <img
+                src="assets/logos/flutter-logo.svg"
+                alt="flutter-logo"
+                class="proficiency-logo"
+                id="flutter-logo"
+              />
+              <div class="proficience-description">
+                <h4>Flutter</h4>
+                <p>Apputveckling för iOS och Android</p>
+              </div>
+            </div>
+            <div class="proficiency-item">
+              <img
+                src="assets/logos/javascript-logo.svg"
+                alt="javascript-logo"
+                class="proficiency-logo"
+                id="javascript-logo"
+              />
+              <div class="proficience-description">
+                <h4>Javascript</h4>
+                <p>Webbutveckling</p>
+              </div>
+            </div>
+            <div class="proficiency-item">
+              <img
+                src="assets/logos/python-logo.svg"
+                alt="python-logo"
+                class="proficiency-logo"
+                id="python-logo"
+              />
+              <div class="proficience-description">
+                <h4>Python</h4>
+                <p>Skriptspråk</p>
+              </div>
+            </div>
+          </div>
+          <p>
+            In addition to the technical skills shown above, I also have
+            experience in several areas through my studies. I have taken courses
+            in C#, SQL, object-oriented programming, prototype development,
+            search engines, decision support systems, information security,
+            database methodology, assembly coding, project management with agile
+            methods, human-computer interaction, IT integration in
+            organizations, and more. I have also worked with machine learning,
+            data analysis, and mobile application development using Flutter.
+          </p>
+          <p>
+            This breadth of knowledge allows me to contribute in various parts
+            of a project, from design and development to problem-solving and
+            system understanding. I am particularly interested in applying my
+            skills in data analysis and machine learning to create insights and
+            solutions that can make a real difference.
+          </p>
+
+          <section id="publications">
+            <h2>Publications & Patents</h2>
+            <p>
+              Accomplished researcher with a focus on machine learning
+              applications in healthcare and innovative patent development.
+            </p>
+            <div class="publications-container">
+              <div class="publication-item">
+                <div class="publication-view">
+                  <div class="publication-line"></div>
+                  <img
+                    src="assets/logos/ieee.png"
+                    alt="IEEE logo"
+                    class="publication-image"
+                  />
+                </div>
+                <div class="publication-description">
+                  <span>July 2024</span>
+                  <h4>Research Paper on Brain Tumor Detection</h4>
+                  <h5>Published in IEEE Conference at IIT Mandi</h5>
+                  <p>
+                    Authored a paper titled "An Experimental Study on Brain
+                    Tumor Detection Using Deep Learning Techniques," which
+                    earned a gold medal in the Medical Track at the 7th Research
+                    Day at SRM University AP.
+                  </p>
+                  <a
+                    href="https://ieeexplore.ieee.org/document/XXXXXX"
+                    target="_blank"
+                    class="publication-link"
+                    >View Publication</a
+                  >
+                  <div class="publication-line-horizontal"></div>
+                </div>
+              </div>
+              <div class="publication-item">
+                <div class="publication-view">
+                  <div class="publication-line"></div>
+                  <a>
+                    <img
+                      src="assets/logos/patent.jpeg"
+                      alt="Patent logo"
+                      class="publication-image"
+                    />f
+                  </a>
+                </div>
+                <div class="publication-description">
+                  <span>September 2024</span>
+                  <h4>Filed Patent for Medication Adherence System</h4>
+                  <h5>Application No: 202441069682</h5>
+                  <p>
+                    Developed a system and method for monitoring and ensuring
+                    medication adherence, featuring automated reminders and
+                    prescription recognition to support healthcare initiatives.
+                  </p>
+                  <div class="publication-line-horizontal"></div>
+                </div>
+              </div>
+            </div>
+          </section>
+        </section>
+
+        <section id="experience">
+          <h2>Experience</h2>
+          <p>
+            Research-oriented professional with a strong background in machine
+            learning, data analysis, and software development.
+          </p>
+          <div class="experience-container">
+            <div class="experience-item">
+              <div class="experience-view">
+                <div class="experience-line"></div>
+                <img
+                  src="assets/logos/hms.png"
+                  alt="MIT logo"
+                  class="experience-image"
+                />
+              </div>
+              <div class="experience-description">
+                <span>Jan 2024 - Dec 2024</span>
+                <h4>Data Scientist</h4>
+                <h5>MIT, Harvard, and AIIMS Collaboration</h5>
+                <p>
+                  Collaborating on a research project to evaluate ML models in
+                  healthcare research, published in PLOS Digital Health.
+                </p>
+                <div class="experience-line-horizontal"></div>
+              </div>
+            </div>
+            <div class="experience-item">
+              <div class="experience-view">
+                <div class="experience-line"></div>
+                <img
+                  src="assets/logos/homanity-logo.png"
+                  alt="Homanity logo"
+                  class="experience-image"
+                />
+              </div>
+              <div class="experience-description">
+                <span>Jul 2023 - Nov 2023</span>
+                <h4>UI/UX & Flutter Developer Intern</h4>
+                <h5>Homanity & Help Moto</h5>
+                <p>
+                  Managed a team to enhance service features and improve
+                  stakeholder accessibility.
+                </p>
+                <div class="experience-line-horizontal"></div>
+              </div>
+            </div>
+            <div class="experience-item">
+              <div class="experience-view">
+                <div class="experience-line"></div>
+                <img
+                  src="assets/logos/aiesec.png"
+                  alt="AIESEC logo"
+                  class="experience-image"
+                />
+              </div>
+              <div
+                class="experience-description experience-description-final-item"
+              >
+                <span>Feb 2022 - Jan 2023</span>
+                <h4>
+                  Junior Manager, Senior Manager, Core Committee President
+                </h4>
+                <h5>AIESEC in Amaravati</h5>
+                <p>
+                  Developed leadership skills through training and networking in
+                  a global student-led community.
+                </p>
+              </div>
+            </div>
+          </div>
+        </section>
+
+        <section id="education">
+          <h2>Education</h2>
+          <div class="experience-container">
+            <div class="experience-item">
+              <div class="experience-view">
+                <div class="experience-line"></div>
+                <img
+                  src="assets/logos/srm-university-logo.png"
+                  alt="SRM University logo"
+                  class="experience-image"
+                />
+              </div>
+              <div class="experience-description">
+                <span>Sept 2021 - Dec 2025</span>
+                <h4>Bachelor of Technology in Computer Science</h4>
+                <h5>SRM University AP</h5>
+                <p>
+                  Coursework: Data Structures, Algorithms, Operating Systems,
+                  Computer Networks, DBMS, Machine Learning, and more.
+                </p>
+                <div class="experience-line-horizontal"></div>
+              </div>
+            </div>
+            <div class="experience-item">
+              <div class="experience-view">
+                <div class="experience-line"></div>
+                <img
+                  src="assets/logos/indus.jpeg"
+                  alt="Indus International School logo"
+                  class="experience-image"
+                />
+              </div>
+              <div class="experience-description">
+                <span>Jul 2021</span>
+                <h4>12th Standard, International Baccalaureate</h4>
+                <h5>Indus International School of Hyderabad</h5>
+                <p>Percentage: 84%</p>
+                <div class="experience-line-horizontal"></div>
+              </div>
+            </div>
+            <div class="experience-item">
+              <div class="experience-view">
+                <div class="experience-line"></div>
+                <img
+                  src="assets/logos/Conakry.jpg"
+                  alt="American International School of Conakry logo"
+                  class="experience-image"
+                />
+              </div>
+              <div
+                class="experience-description experience-description-final-item"
+              >
+                <span>Jun 2019</span>
+                <h4>10th Standard, MSA CESS Board</h4>
+                <h5>American International School of Conakry</h5>
+                <p>GPA: 3.9 / 4.0</p>
+              </div>
+            </div>
+          </div>
+        </section>
+
+        <section id="projects">
+          <h2>Project</h2>
+          <p>
+            Here is a list of some projects I have created. More information
+            about specific technologies and features can be found in each
+            project's README file on GitHub!
+          </p>
+          <div class="projects-container">
+            <div class="project-item">
+              <img
+                src="assets/images/tickitoff-project.png"
+                alt="projektbild"
+                class="project-image"
+              />
+              <div class="project-description">
+                <div class="project-title">
+                  <h4>TickItOff <span> - Bucket-list app</span></h4>
+                </div>
+                <p>
+                  Byggt med Kotlin/Jetpack Compose och implementerar notiser,
+                  social media integration, animationer och mer.
+                </p>
+                <p>
+                  Vinnare av bästa individuellt utvecklade appen i kursen
+                  Programmering för mobiler på Stockholms Universitet 🏆
+                </p>
+                <div class="project-buttons">
+                  <button class="link-button" id="project-1-github-button">
+                    <img
+                      src="assets/icons/github-icon.svg"
+                      alt="Github ikon"
+                      class="icons github-icon"
+                    />
+                    <span>Github</span>
+                  </button>
+                  <button
+                    class="link-button-icon-right"
+                    id="project-1-demo-button"
+                  >
+                    <span>Demo (video)</span>
+                    <img
+                      src="assets/icons/open-icon.svg"
+                      alt="Öppna länk ikon"
+                      class="icons"
+                    />
+                  </button>
+                </div>
+              </div>
+            </div>
+
+            <div class="project-item">
+              <img
+                src="assets/images/midnattsloppet-project.png"
+                alt="projektbild"
+                class="project-image"
+              />
+              <div class="project-description">
+                <div class="project-title">
+                  <h4>Midnattsloppet Fortal <span> - För företag</span></h4>
+                </div>
+                <p>
+                  Ett projekt skapat i samarbete med Midnattsloppet för att
+                  kombinera löpning och välgörenhet. Appen gör det möjligt för
+                  företag att skapa lag, samla in donationer till valda
+                  organisationer via swish, utmana andra lag och följa
+                  insamlingsresultat via topplistor och notifikationer – allt
+                  för att öka engagemang och bidra till en god sak.
+                </p>
+                <p>
+                  Byggd i projektgrupp på tio personer med Flutter och HTML+CSS
+                  för frontend och Java med MariaDB, Tomcat, Jenkins för
+                  backendhosting.
+                </p>
+                <div class="project-buttons">
+                  <button class="link-button" id="project-3-github-button">
+                    <img
+                      src="assets/icons/github-icon.svg"
+                      alt="Github ikon"
+                      class="icons github-icon"
+                    />
+                    <span>Github</span>
+                  </button>
+                  <button
+                    class="link-button-icon-right"
+                    id="project-3-demo-button"
+                  >
+                    <span>Demo (video)</span>
+                    <img
+                      src="assets/icons/open-icon.svg"
+                      alt="Öppna länk ikon"
+                      class="icons"
+                    />
+                  </button>
+                </div>
+              </div>
+            </div>
+            <div class="project-item">
+              <img
+                src="assets/images/gridguru-project.png"
+                alt="projektbild"
+                class="project-image"
+              />
+              <div class="project-description">
+                <div class="project-title">
+                  <h4>GridGuru <span> - Formel 1 Quiz</span></h4>
+                </div>
+                <p>
+                  Quizzen har en spelstruktur där frågorna spelas i set om 10,
+                  och användaren får sina poäng efter varje set.
+                </p>
+                <p>Byggt med HTML+CSS och vanilla JavaScript.</p>
+                <p>
+                  Vinnare för design i kursen Webbprogrammering 1 på Stockholms
+                  Universitet 🏆
+                </p>
+                <div class="project-buttons">
+                  <button class="link-button" id="project-2-github-button">
+                    <img
+                      src="assets/icons/github-icon.svg"
+                      alt="Github ikon"
+                      class="icons github-icon"
+                    />
+                    <span>Github</span>
+                  </button>
+                  <button
+                    class="link-button-icon-right"
+                    id="project-2-demo-button"
+                  >
+                    <span>Demo (live)</span>
+                    <img
+                      src="assets/icons/open-icon.svg"
+                      alt="Öppna länk ikon"
+                      class="icons"
+                    />
+                  </button>
+                </div>
+              </div>
+            </div>
+            <div class="project-item">
+              <img
+                src="assets/images/portfolio-project.png"
+                alt="projektbild"
+                class="project-image"
+              />
+              <div class="project-description">
+                <div class="project-title">
+                  <h4>Portfölj <span> - Denna portföljehemsidan</span></h4>
+                </div>
+                <p>
+                  Byggt från scratch med endast HTML+CSS och vanilla JavaScript
+                  (inga frameworks eller andra bibliotek använda).
+                </p>
+                <div class="project-buttons">
+                  <button class="link-button" id="project-4-github-button">
+                    <img
+                      src="assets/icons/github-icon.svg"
+                      alt="Github ikon"
+                      class="icons github-icon"
+                    />
+                    <span>Github</span>
+                  </button>
+                  <button
+                    class="link-button-icon-right"
+                    id="project-4-demo-button"
+                  >
+                    <span>Demo (live)</span>
+                    <img
+                      src="assets/icons/open-icon.svg"
+                      alt="Öppna länk ikon"
+                      class="icons"
+                    />
+                  </button>
+                </div>
+              </div>
+            </div>
+            <div class="project-item">
+              <img
+                src="assets/images/terratrivia-image.png"
+                alt="projektbild"
+                class="project-image"
+              />
+              <div class="project-description">
+                <div class="project-title">
+                  <h4>TerraTrivia <span> - Ett geografispel</span></h4>
+                </div>
+                <p>
+                  TerraTrivia är ett frågesportsspel som testar din förmåga i
+                  geografi!
+                </p>
+                <p>
+                  Frågorna är uppdelade i tre stycken kategorier: länder,
+                  huvudstäder och landmärken.
+                </p>
+                <p>
+                  För varje kategori finns fem stycken svårighetsgrader, totalt
+                  finns det över 150 frågor att svara på. Lycka till!
+                </p>
+                <div class="project-buttons">
+                  <button class="link-button" id="project-5-github-button">
+                    <img
+                      src="assets/icons/github-icon.svg"
+                      alt="Github ikon"
+                      class="icons github-icon"
+                    />
+                    <span>Github</span>
+                  </button>
+                  <button
+                    class="link-button-icon-right"
+                    id="project-5-demo-button"
+                  >
+                    <span>Demo (live)</span>
+                    <img
+                      src="assets/icons/open-icon.svg"
+                      alt="Öppna länk ikon"
+                      class="icons"
+                    />
+                  </button>
+                </div>
+              </div>
+            </div>
+          </div>
+        </section>
+      </main>
+    </div>
+    <script src="scripts/script.js"></script>
+  </body>
+</html>
