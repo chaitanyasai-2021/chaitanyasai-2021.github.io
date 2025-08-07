@@ -4,19 +4,33 @@
 
 <html lang="sv">
   <head>
-    <title>Chaitanya Sai</title>
+    <title>Chaitanya Sai Nutakki</title>
     <meta charset="utf-8" />
 
-    <meta name="author" content="Chaitanya Sai N" />
-    <meta name="description" content="Main page of portfolio" />
+    <meta name="author" content="Chaitanya Sai Nutakki" />
+    <meta
+      name="description"
+      content="Chaitanya Sai Nutakki's digital CV and code portfolio. See my projects and experience in programming and development."
+    />
     <meta name="generator" content="Visual Studio Code" />
-    <meta name="keywords" content="About me. Experience. Programming" />
+    <meta
+      name="keywords"
+      content="Chaitanya Sai Nutakki, programmer, developer, frontend, code portfolio, digital CV, resume, data scientist, machine learning, Python"
+    />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
 
     <!-- Stop dates from being formatted on mobile as phone numbers -->
     <meta name="format-detection" content="telephone=no" />
 
-    <link rel="stylesheet" href="styles/style.css?rnd=12345" />
+    <!-- Stylesheets -->
+    <link rel="stylesheet" href="styles/about.css?rnd=12345" />
+    <link rel="stylesheet" href="styles/proficiencies.css?rnd=12345" />
+    <link rel="stylesheet" href="styles/experience.css?rnd=12345" />
+    <link rel="stylesheet" href="styles/education.css?rnd=12345" />
+    <link rel="stylesheet" href="styles/projects.css?rnd=12345" />
+
+    <!-- Base stylesheet at the bottom so it has precedence -->
+    <link rel="stylesheet" href="styles/base.css?rnd=12345" />
 
     <!-- Favicon -->
     <link
@@ -44,43 +58,54 @@
     <header>
       <div id="header-buttons">
         <nav class="header-dropdown-navigation-list">
-          <button id="header-navigation-button">
+          <button id="header-navigation-button" class="button-style">
             <img
               src="assets/icons/burger-menu-icon.svg"
-              alt="Navigering ikon"
+              alt="Navigation Icon"
               class="icons"
             />
-            <span>Navigation</span>
+            <span>Menu</span>
           </button>
           <ul id="header-navigation-list" class="nav-list">
-            <li><a href="http://viktorhogberg.com#about-me">About Me</a></li>
-            <li>
-              <a href="http://viktorhogberg.com#proficiencies">Skills</a>
-            </li>
-            <li>
-              <a href="http://viktorhogberg.com#experience">Erfarenheter</a>
-            </li>
-            <li><a href="http://viktorhogberg.com#education">Utbildning</a></li>
-            <li><a href="http://viktorhogberg.com#projects">Project</a></li>
+            <li><a href="#about-me">About Me</a></li>
+            <li><a href="#proficiencies">Proficiencies</a></li>
+            <li><a href="#experience">Experience</a></li>
+            <li><a href="#Student-Organizations">Student Organizations</a></li>
+            <li><a href="#education">Education</a></li>
+            <li><a href="#Publications">Publications</a></li>
+            <li><a href="#projects">Projects</a></li>
             <li class="spacer"></li>
             <li>
               <button id="theme-toggle-button" class="theme-toggle">
-                Ändra tema
+                Change Theme
               </button>
             </li>
           </ul>
         </nav>
-        <button
-          class="link-button-icon-right"
-          id="header-photography-portfolio-button"
+        <a
+          href="https://drive.google.com/drive/folders/1sEb1SaqGZuEVb3u2h-2XzQSwHUW_-iv-?usp=sharing"
+          class="button-style icon-right"
+          target="_blank"
+          rel="noopener noreferrer"
         >
-          <span>Fotografiportfölj</span>
+          <span>Certifications</span>
           <img
-            src="assets/icons/open-icon.svg"
-            alt="Portfolio ikon"
-            class="icons"
+            src="assets/icons/open-link-icon.svg"
+            alt="Certification Button"
           />
-        </button>
+        </a>
+                <a
+          href="https://drive.google.com/drive/folders/1sEb1SaqGZuEVb3u2h-2XzQSwHUW_-iv-?usp=sharing"
+          class="button-style icon-right"
+          target="_blank"
+          rel="noopener noreferrer"
+        >
+          <span>Blog</span>
+          <img
+            src="assets/icons/open-link-icon.svg"
+            alt="Blog Button"
+          />
+        </a>
       </div>
     </header>
 
@@ -89,265 +114,551 @@
         <img
           id="portrait"
           src="assets/images/portrait.png"
-          alt="En bild på mig"
+          alt="Portfolio picture of Chaitanya Sai Nutakki"
         />
         <h1>Chaitanya Sai Nutakki</h1>
         <h3>Data Scientist</h3>
-        <h4 id="sidebar-location-info">📍 Hyderabad, India IN</h4>
+        <h4 id="sidebar-location-info">📍 Hyderabad, India 🇮🇳</h4>
         <section>
-          <button class="link-button-icon-right" id="sidebar-resume-button">
-            <span>Visa CV</span>
-            <img
-              src="assets/icons/open-icon.svg"
-              alt="Öppna länk ikon"
-              class="icons"
-            />
-          </button>
+<div class="project-buttons" style="flex-direction: column; gap: 10px;">
+  <a
+    href="https://drive.google.com/file/d/1xU95oGx-2og-o0SAfGpd99tpsKSjVC9H/view?usp=sharing"
+    class="button-style icon-right"
+    target="_blank"
+    rel="noopener noreferrer"
+  >
+    <span>Indian Resume</span>
+    <img
+      src="assets/logos/india.svg"
+      alt="Resume"
+    />
+    <img
+      src="assets/icons/open-link-icon.svg"
+      alt="Open Link"
+    />
+  </a>
+
+  <a
+    href="https://drive.google.com/drive/folders/1-ITMDvvnRXYd2AzovxdTKRSvAOgLW7zf?usp=sharing"
+    class="button-style icon-right"
+    target="_blank"
+    rel="noopener noreferrer"
+  >
+    <span>Japanese Resume</span>
+    <img
+      src="assets/logos/japan.svg"
+      alt="Resume"
+    />
+    <img
+      src="assets/icons/open-link-icon.svg"
+      alt="Open Link"
+    />
+  </a>
+</div>
+
           <h3>Contact:</h3>
           <div id="sidebar-social-buttons">
-            <button class="link-button" id="sidebar-social-email-button">
+            <a
+              href="mailto:chaitanyasai2021@gmail.com"
+              class="button-style"
+              target="_blank"
+              rel="noopener noreferrer"
+            >
               <img
                 src="assets/icons/email-icon.svg"
-                alt="Email ikon"
+                alt="Email Icon"
                 class="icons"
               />
-              <span>Email</span>
-            </button>
-            <button class="link-button" id="sidebar-social-linkedin-button">
+              <span>Gmail</span>
+            </a>
+            <a
+              href="mailto:chaitanyasai@zohomail.eu"
+              class="button-style"
+              target="_blank"
+              rel="noopener noreferrer"
+            >
+              <img src="assets/icons/icon.png" alt="Email Icon" class="icons" />
+              <span>Zoho Mail</span>
+            </a>
+            <a
+              href="https://www.linkedin.com/in/chaitanyanutakki/"
+              class="button-style"
+              target="_blank"
+              rel="noopener noreferrer"
+            >
               <img
                 src="assets/icons/linkedin-icon.svg"
-                alt="LinkedIn ikon"
+                alt="LinkedIn Icon"
                 class="icons"
               />
               <span>LinkedIn</span>
-            </button>
-            <button class="link-button" id="sidebar-social-github-button">
+            </a>
+            <a
+              href="https://github.com/chaitanyasai-2021"
+              class="button-style"
+              target="_blank"
+              rel="noopener noreferrer"
+            >
               <img
                 src="assets/icons/github-icon.svg"
-                alt="Github ikon"
+                alt="Github Icon"
                 class="icons github-icon"
               />
               <span>Github</span>
-            </button>
-            <button class="link-button" id="sidebar-social-instagram-button">
+            </a>
+            <a
+              href="https://orcid.org/0009-0005-5007-6657"
+              class="button-style"
+              target="_blank"
+              rel="noopener noreferrer"
+            >
               <img
-                src="assets/icons/instagram-icon.svg"
-                alt="Instagram ikon"
+                src="assets/icons/orcid.png"
+                alt="Instagram Icon"
                 class="icons"
               />
-              <span>Instagram</span>
-            </button>
+              <span>Orcid</span>
+            </a>
           </div>
-        </section>
+        </section>        
       </aside>
 
-      <main class="about">
+      <main>
         <section id="about-me">
-          <h2>About Me</h2>
+          <h2>
+            | Hello! | Bonjour! | こんにちは! |<span id="waving-hand">👋</span>
+          </h2>
           <p>
-            Hey 👋, I'm Chaitanya Sai Nutakki! I am currently pursuing a
-            Bachelor of Technology in Computer Science and Engineering with a
-            specialization in Big Data at SRM University AP 🎓.
-          </p>
-          <p>
-            Aspiring to become a Data Scientist, I am also passionate about
-            UI/UX design and developing apps using Flutter. Additionally, I am
-            exploring Microsoft Azure to enhance my skills in cloud computing
-            and data services ☁️🔷. I am actively engaged in building projects
-            that focus on exploratory data analysis, machine learning, and
-            Flutter applications 💻🔥.
+            Hey 👋, I’m Chaitanya Sai Nutakki a recent graduate with a Bachelor of Technology in 
+            Computer Science and Engineering, specializing in Big Data Analytics, from SRM University AP 🎓.
           </p>
           <p>
             My research interests encompass natural language processing,
-            transfer learning, deep learning, and machine learning ✨. I thrive
-            on learning new topics in data science, visualizing data, and
-            conducting research 🤓. Sharing valuable insights and making an
-            impact to help others learn is something I truly enjoy 🧐. I am
-            always open to discussions, so feel free to reach out with questions
-            or concerns 💬.
+            transfer learning, deep learning, and machine learning. I thrive on
+            learning new topics in data science, visualizing data, and
+            conducting research. Sharing valuable insights and making an impact
+            to help others learn is something I truly enjoy. I am always open to
+            discussions, so feel free to reach out with questions or concerns.
           </p>
         </section>
 
+        
+
         <section id="proficiencies">
-          <h2>Skills</h2>
-          <div class="proficiencies">
+          <h2>Programming Languages</h2>
+          <div class="proficiency-container">
             <div class="proficiency-item">
               <img
-                src="assets/logos/figma-logo.svg"
-                alt="figma-logo"
-                class="proficiency-logo"
-                id="figma-logo"
-              />
-              <div class="proficience-description">
-                <h4>Figma</h4>
-                <p>Designverktyg för UI/UX</p>
-              </div>
-            </div>
-            <div class="proficiency-item">
-              <img
-                src="assets/logos/java-logo.svg"
-                alt="java-logo"
-                class="proficiency-logo"
-                id="java-logo"
-              />
-              <div class="proficience-description">
-                <h4>Java</h4>
-                <p>Objektorienterad programmering</p>
-              </div>
-            </div>
-            <div class="proficiency-item">
-              <img
-                src="assets/logos/kotlin-logo.svg"
-                alt="kotlin-logo"
-                class="proficiency-logo"
-                id="kotlin-logo"
-              />
-              <div class="proficience-description">
-                <h4>Kotlin</h4>
-                <p>Apputveckling för Android</p>
-              </div>
-            </div>
-            <div class="proficiency-item">
-              <img
-                src="assets/logos/flutter-logo.svg"
-                alt="flutter-logo"
-                class="proficiency-logo"
-                id="flutter-logo"
-              />
-              <div class="proficience-description">
-                <h4>Flutter</h4>
-                <p>Apputveckling för iOS och Android</p>
-              </div>
-            </div>
-            <div class="proficiency-item">
-              <img
-                src="assets/logos/javascript-logo.svg"
-                alt="javascript-logo"
-                class="proficiency-logo"
-                id="javascript-logo"
-              />
-              <div class="proficience-description">
-                <h4>Javascript</h4>
-                <p>Webbutveckling</p>
-              </div>
-            </div>
-            <div class="proficiency-item">
-              <img
-                src="assets/logos/python-logo.svg"
+                src="assets/logos/tech-logos/python.svg"
                 alt="python-logo"
                 class="proficiency-logo"
                 id="python-logo"
               />
               <div class="proficience-description">
                 <h4>Python</h4>
-                <p>Skriptspråk</p>
+                <p>Language for Data Science & AI</p>
               </div>
             </div>
-          </div>
-          <p>
-            In addition to the technical skills shown above, I also have
-            experience in several areas through my studies. I have taken courses
-            in C#, SQL, object-oriented programming, prototype development,
-            search engines, decision support systems, information security,
-            database methodology, assembly coding, project management with agile
-            methods, human-computer interaction, IT integration in
-            organizations, and more. I have also worked with machine learning,
-            data analysis, and mobile application development using Flutter.
-          </p>
-          <p>
-            This breadth of knowledge allows me to contribute in various parts
-            of a project, from design and development to problem-solving and
-            system understanding. I am particularly interested in applying my
-            skills in data analysis and machine learning to create insights and
-            solutions that can make a real difference.
-          </p>
+            <div class="proficiency-item">
+              <img
+                src="assets/logos/tech-logos/c.svg"
+                alt="clang-logo"
+                class="proficiency-logo"
+                id="clang-logo"
+              />
+              <div class="proficience-description">
+                <h4>C Language</h4>
+                <p>System & Embedded Development</p>
+              </div>
+            </div>
 
-          <section id="publications">
-            <h2>Publications & Patents</h2>
-            <p>
-              Accomplished researcher with a focus on machine learning
-              applications in healthcare and innovative patent development.
-            </p>
-            <div class="publications-container">
-              <div class="publication-item">
-                <div class="publication-view">
-                  <div class="publication-line"></div>
-                  <img
-                    src="assets/logos/ieee.png"
-                    alt="IEEE logo"
-                    class="publication-image"
-                  />
-                </div>
-                <div class="publication-description">
-                  <span>July 2024</span>
-                  <h4>Research Paper on Brain Tumor Detection</h4>
-                  <h5>Published in IEEE Conference at IIT Mandi</h5>
-                  <p>
-                    Authored a paper titled "An Experimental Study on Brain
-                    Tumor Detection Using Deep Learning Techniques," which
-                    earned a gold medal in the Medical Track at the 7th Research
-                    Day at SRM University AP.
-                  </p>
-                  <a
-                    href="https://ieeexplore.ieee.org/document/XXXXXX"
-                    target="_blank"
-                    class="publication-link"
-                    >View Publication</a
-                  >
-                  <div class="publication-line-horizontal"></div>
-                </div>
-              </div>
-              <div class="publication-item">
-                <div class="publication-view">
-                  <div class="publication-line"></div>
-                  <a>
-                    <img
-                      src="assets/logos/patent.jpeg"
-                      alt="Patent logo"
-                      class="publication-image"
-                    />f
-                  </a>
-                </div>
-                <div class="publication-description">
-                  <span>September 2024</span>
-                  <h4>Filed Patent for Medication Adherence System</h4>
-                  <h5>Application No: 202441069682</h5>
-                  <p>
-                    Developed a system and method for monitoring and ensuring
-                    medication adherence, featuring automated reminders and
-                    prescription recognition to support healthcare initiatives.
-                  </p>
-                  <div class="publication-line-horizontal"></div>
-                </div>
+            <div class="proficiency-item">
+              <img
+                src="assets/logos/tech-logos/cpp.svg"
+                alt="cpp-logo"
+                class="proficiency-logo"
+                id="cpp-logo"
+              />
+              <div class="proficience-description">
+                <h4>C++ Language</h4>
+                <p>Object-Oriented Programming </p>
               </div>
             </div>
-          </section>
+            </section>
+
+        <section id="proficiencies">
+          <h2>Web Dev</h2>
+          <div class="proficiency-container">
+            <div class="proficiency-item">
+              <img
+                src="assets/logos/tech-logos/html5.svg"
+                alt="html-logo"
+                class="proficiency-logo"
+                id="html-logo"
+              />
+              <div class="proficience-description">
+                <h4>HTML5</h4>
+                <p>Structure for Web Development</p>
+              </div>
+            </div>
+            <div class="proficiency-item">
+              <img
+                src="assets/logos/tech-logos/css.svg"
+                alt="css-logo"
+                class="proficiency-logo"
+                id="css-logo"
+              />
+              <div class="proficience-description">
+                <h4>CSS</h4>
+                <p>Style Sheets for Web Development</p>
+              </div>
+            </div>
+            <div class="proficiency-item">
+              <img
+                src="assets/logos/tech-logos/javascript.svg"
+                alt="javascript-logo"
+                class="proficiency-logo"
+                id="javascript-logo"
+              />
+              <div class="proficience-description">
+                <h4>JavaScript</h4>
+                <p>Scripts & Logic for Web Development</p>
+              </div>
+            </div>
+            <div class="proficiency-item">
+              <img
+                src="assets/logos/tech-logos/djangoproject-icon.svg"
+                alt="django-logo"
+                class="proficiency-logo"
+                id="django-logo"
+              />
+              <div class="proficience-description">
+                <h4>Django</h4>
+                <p>Backend Web Dev for Web Applications</p>
+              </div>
+            </div>
+            <div class="proficiency-item">
+              <img
+                src="assets/logos/tech-logos/flutter.svg"
+                alt="flutter-logo"
+                class="proficiency-logo"
+                id="flutter-logo"
+              />
+              <div class="proficience-description">
+                <h4>Flutter</h4>
+                <p>App development for iOS and Android</p>
+              </div>
+            </div>
+
+            <div class="proficiency-item">
+              <img
+                src="assets/logos/tech-logos/figma.svg"
+                alt="figma-logo"
+                class="proficiency-logo"
+                id="figma-logo"
+              />
+              <div class="proficience-description">
+                <h4>Figma</h4>
+                <p>Design tools for UI/UX</p>
+              </div>
+            </div>
+            
+          </div>
+
+
+        <section id="proficiencies">
+          <h2>Machine Learning</h2>
+          <div class="proficiency-container">
+            <div class="proficiency-item">
+              <img
+                src="assets/logos/tech-logos/Pandas.svg"
+                alt="pandas-logo"
+                class="proficiency-logo"
+                id="pandas-logo"
+              />
+              <div class="proficience-description">
+                <h4>Pandas</h4>
+                <p>Data Manipulation & analysis using dataframes</p>
+              </div>
+            </div>
+            <div class="proficiency-item">
+              <img
+                src="assets/logos/tech-logos/NumPy.svg"
+                alt="numpy-logo"
+                class="proficiency-logo"
+                id="numpy-logo"
+              />
+              <div class="proficience-description">
+                <h4>NumPy</h4>
+                <p>Numerical computing and array processing</p>
+              </div>
+            </div>  
+                        <div class="proficiency-item">
+              <img
+                src="assets/logos/tech-logos/Matplotlib.svg"
+                alt="matplotlib-logo"
+                class="proficiency-logo"
+                id="matplotlib-logo"
+              />
+              <div class="proficience-description">
+                <h4>Matplotlib</h4>
+                <p>Data visualization with custom plots</p>
+              </div>
+            </div>  
+
+              <div class="proficiency-item">
+              <img
+                src="assets/logos/tech-logos/Seaborn.svg"
+                alt="seaborn-logo"
+                class="proficiency-logo"
+                id="seaborn-logo"
+              />
+              <div class="proficience-description">
+                <h4>Seaborn</h4>
+                <p>Statistical data visualization</p>
+              </div>
+            </div>  
+
+              <div class="proficiency-item">
+              <img
+                src="assets/logos/tech-logos/scikit-learn.svg"
+                alt="scikit-logo"
+                class="proficiency-logo"
+                id="scikit-logo"
+              />
+              <div class="proficience-description">
+                <h4>SciKit-learn</h4>
+                <p>ML algorithm and model evaluation tool</p>
+              </div>
+            </div>
+
+              <div class="proficiency-item">
+              <img
+                src="assets/logos/tech-logos/huggingface.svg"
+                alt="huggingface-logo"
+                class="proficiency-logo"
+                id="huggingface-logo"
+              />
+              <div class="proficience-description">
+                <h4>Hugging Face</h4>
+                <p>Pretrained models for NLP and CV</p>
+              </div>
+            </div>  
+
         </section>
+
+        <section id="proficiencies">
+          <h2>Deep Learning</h2>
+          <div class="proficiency-container">
+            <div class="proficiency-item">
+              <img
+                src="assets/logos/tech-logos/pytorch-icon.svg"
+                alt="pytorch-logo"
+                class="proficiency-logo"
+                id="pytorch-logo"
+              />
+              <div class="proficience-description">
+                <h4>PyTorch</h4>
+                <p>Framework with dynamic computation graphs</p>
+              </div>
+            </div>
+            <div class="proficiency-item">
+              <img
+                src="assets/logos/tech-logos/tensorflow-icon.svg"
+                alt="tensorflow-logo"
+                class="proficiency-logo"
+                id="tensorflow-logo"
+              />
+              <div class="proficience-description">
+                <h4>TensorFlow</h4>
+                <p>End-to-end machine learning platform</p>
+              </div>
+            </div>  
+                        <div class="proficiency-item">
+              <img
+                src="assets/logos/tech-logos/Keras.svg"
+                alt="keras-logo"
+                class="proficiency-logo"
+                id="keras-logo"
+              />
+              <div class="proficience-description">
+                <h4>Keras</h4>
+                <p>High-level Neural Networks</p>
+              </div>
+            </div>  
+
+        </section>
+
+        
+        <section id="proficiencies">
+          <h2>Computer Vision</h2>
+          <div class="proficiency-container">
+            <div class="proficiency-item">
+              <img
+                src="assets/logos/tech-logos/opencv-icon.svg"
+                alt="opencv-logo"
+                class="proficiency-logo"
+                id="opencv-logo"
+              />
+              <div class="proficience-description">
+                <h4>OpenCV</h4>
+                <p>Image and video processing library</p>
+              </div>
+            </div>
+
+            <div class="proficiency-item">
+              <img
+                src="assets/logos/tech-logos/Ultralytics_Logomark_Original.svg"
+                alt="yolo-logo"
+                class="proficiency-logo"
+                id="yolo-logo"
+              />
+              <div class="proficience-description">
+                <h4>Ultralytics</h4>
+                <p> Object detection using YOLOv11n</p>
+              </div>
+            </div>
+
+
+
+            </section>
+
+                    
+        <section id="proficiencies">
+          <h2>Cloud Platforms</h2>
+          <div class="proficiency-container">
+            <div class="proficiency-item">
+              <img
+                src="assets/logos/tech-logos/aws.svg"
+                alt="aws-logo"
+                class="proficiency-logo"
+                id="aws-logo"
+              />
+              <div class="proficience-description">
+                <h4>Amazon Web Services</h4>
+                <p>ECS, EKS, SageMaker</p>
+              </div>
+            </div>
+
+            <div class="proficiency-item">
+              <img
+                src="assets/logos/tech-logos/oracle-icon.svg"
+                alt="oracle-logo"
+                class="proficiency-logo"
+                id="oracle-logo"
+              />
+              <div class="proficience-description">
+                <h4>Oracle Cloud</h4>
+                <p>Oracle AI Associate</p>
+              </div>
+            </div>
+
+            <div class="proficiency-item">
+              <img
+                src="assets/logos/tech-logos/azure.svg"
+                alt="azure-logo"
+                class="proficiency-logo"
+                id="azure-logo"
+              />
+              <div class="proficience-description">
+                <h4>Azure Cloud</h4>
+                <p>AZ-900</p>
+              </div>
+            </div>
+
+
+
+            </section>
 
         <section id="experience">
           <h2>Experience</h2>
-          <p>
-            Research-oriented professional with a strong background in machine
-            learning, data analysis, and software development.
-          </p>
+          <p>The bellow are my Internship based experiences:</p>
           <div class="experience-container">
             <div class="experience-item">
               <div class="experience-view">
                 <div class="experience-line"></div>
                 <img
                   src="assets/logos/hms.png"
-                  alt="MIT logo"
+                  alt="Harvard Medical School logo"
                   class="experience-image"
                 />
               </div>
               <div class="experience-description">
                 <span>Jan 2024 - Dec 2024</span>
-                <h4>Data Scientist</h4>
-                <h5>MIT, Harvard, and AIIMS Collaboration</h5>
-                <p>
-                  Collaborating on a research project to evaluate ML models in
-                  healthcare research, published in PLOS Digital Health.
-                </p>
+                <h4>Research Data Scientist</h4>
+                <h5>
+                  MIT, Harvard Medical School, and AIIMS Research Collaboration
+                </h5>
+<p>This Research covers 280 machine learning studies in dentistry (2018–2023), emphasizing the field’s reliance on supervised classification and AUROC for performance evaluation. It's now published in PLOS Digital Health, a <strong>Q1 journal</strong> in Health Informatics.</p>
+<p>   </p>
+<p></p>
+<p>
+  A <strong>Q1 journal</strong> is important because it <strong>ranks in the top 25%</strong> of journals in its field, meaning it is highly prestigious, rigorously peer-reviewed, and has the greatest visibility and impact in the academic community. Publishing in a <strong>Q1 journal</strong> boosts the research reputation and increases the chances of this work being widely cited and recognized amongst the community.
+</p>
+
+<div style="display: flex; align-items: center; gap: 15px;">
+  <!-- SCImago Image -->
+  <a 
+    href="https://www.scimagojr.com/journalsearch.php?q=21101242952&amp;tip=sid&amp;exact=no" 
+    title="SCImago Journal &amp; Country Rank"
+    target="_blank"
+    rel="noopener noreferrer"
+  >
+    <img 
+      border="0" 
+      src="https://www.scimagojr.com/journal_img.php?id=21101242952" 
+      alt="SCImago Journal &amp; Country Rank" 
+    />
+  </a>
+  
+
+  <!-- PLOS Journal Link using project button style -->
+<div class="experience-buttons">
+  <!-- First Journal Button -->
+  <a
+    href="https://journals.plos.org/digitalhealth/article?id=10.1371/journal.pdig.0000940"
+    class="button-style icon-right"
+    target="_blank"
+    rel="noopener noreferrer"
+  >
+    <span> PLOS Journal Paper Link</span>
+    <img
+      src="assets/logos/plos.jpg"
+      alt="Open Link"
+    />
+    <img
+      src="assets/icons/open-link-icon.svg"
+      alt="Open Link"
+    />
+  </a>
+
+  <!-- Second Journal Button -->
+<a
+  href="https://www.linkedin.com/posts/janbeger_machine-learning-in-dentistry-a-scoping-activity-7356892687360311296-Q6EQ?utm_source=share&utm_medium=member_desktop&rcm=ACoAADadKJIBXq5ieL0NJRrf_JqHA2Evw5dSAaM"
+  class="button-style icon-right"
+  target="_blank"
+  rel="noopener noreferrer"
+>
+  <span>
+    Jan Beger’s REVIEW on our Paper<br>
+    Global Head of AI Advocacy @ GE HealthCare
+  </span>
+
+  <img
+    src="assets/icons/linkedin-icon.svg"
+    alt="Open Link (Second Journal)"
+  />
+  <img
+    src="assets/icons/open-link-icon.svg"
+    alt="Open Link Icon"
+  />
+  
+</a>
+</div>
+
+</div>
+
+
                 <div class="experience-line-horizontal"></div>
               </div>
             </div>
@@ -355,18 +666,20 @@
               <div class="experience-view">
                 <div class="experience-line"></div>
                 <img
-                  src="assets/logos/homanity-logo.png"
+                  src="assets/logos/homanity.jpg"
                   alt="Homanity logo"
                   class="experience-image"
                 />
+                
               </div>
+              
               <div class="experience-description">
                 <span>Jul 2023 - Nov 2023</span>
                 <h4>UI/UX & Flutter Developer Intern</h4>
-                <h5>Homanity & Help Moto</h5>
+                <h5>Homanity</h5>
                 <p>
-                  Managed a team to enhance service features and improve
-                  stakeholder accessibility.
+                  Led a team of 4, overseeing application development and enhancing service features at Helpy Moto, the parent company of Homanity. My work focused on improving 
+                  user experience and functionality, similar to platforms like Urban Company.
                 </p>
                 <div class="experience-line-horizontal"></div>
               </div>
@@ -375,23 +688,179 @@
               <div class="experience-view">
                 <div class="experience-line"></div>
                 <img
-                  src="assets/logos/aiesec.png"
-                  alt="AIESEC logo"
+                  src="assets/logos/apssdc.png"
+                  alt="apssdc-logo"
                   class="experience-image"
+                  id="apssdc-logo"
                 />
               </div>
               <div
                 class="experience-description experience-description-final-item"
               >
-                <span>Feb 2022 - Jan 2023</span>
-                <h4>
-                  Junior Manager, Senior Manager, Core Committee President
-                </h4>
-                <h5>AIESEC in Amaravati</h5>
+                <span>Jun 2023 - Aug 2023</span>
+                <h4>Django Learning Intern</h4>
+                <h5>Andhra Pradesh State Skill Developemt Corporation</h5>
                 <p>
-                  Developed leadership skills through training and networking in
-                  a global student-led community.
+                  Developed a comprehensive Django-based job portal during a three-month internship, completed on August 14, 2023, 
+                  aimed at streamlining the recruitment process for both job seekers and employers
                 </p>
+              </div>
+            </div>
+          </div>
+        </section>
+
+        <section id="Student-Organizations">
+          <h2>Student Organizations</h2>
+          <p>The bellow are student organizations that I was a part of:</p>
+          <div class="experience-container">
+            <div class="experience-item">
+              <div class="experience-view">
+                <div class="experience-line"></div>
+                <img
+                  src="assets/logos/ennovab.jpeg"
+                  alt="Ennovab logo"
+                  class="experience-image"
+                />
+              </div>
+              <div class="experience-description">
+                <span>Aug 2022 - May 2025</span>
+                <h4>
+  <a href="https://srmap.edu.in/blog/ennovab-playground-next-unicorn/" target="_blank" rel="noopener noreferrer" style="color: white;">
+    Ennovab AP
+  </a>
+</h4>
+
+                <h5>Member</h5>
+                
+                <p>Initiated by alumni of the Sutardja Center for Entrepreneurship & Technology, UC Berkeley, Ennovab at SRM AP 
+                  is a Silicon Valley-inspired entrepreneurial lab where I gained practical 
+                  experience in startup development, business model innovation, and pitching real-world ventures.</p>
+                                  <a
+                  href="https://srmap.edu.in/ennovab/"
+                  class="button-style icon-right"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  id="show-website-button"
+                >
+                  <span>Ennovab Website</span>
+                  <img
+                    src="assets/icons/open-link-icon.svg"
+                    alt="Open Link Icon"
+                    class="icons"
+                  />
+                  
+                </a>
+                  
+                <div class="experience-line-horizontal"></div>
+                
+              </div>
+              
+            </div>
+            
+            <div class="experience-item">
+              <div class="experience-view">
+                <div class="experience-line"></div>
+                <img
+                  src="assets/logos/ntl.jpeg"
+                  alt="NTL Logo"
+                  class="experience-image"
+                />
+              </div>
+              <div class="experience-description">
+                <span>May 2022 - Nov 2023</span>
+<a href="https://ntl-ap-dev.vercel.app/" target="_blank" rel="noopener noreferrer" style="color: white; text-decoration: underline;">
+  <h4 style="margin: 0;">Next Tech Lab - AP</h4>
+</a>
+                <span>Jan 2023 - Nov 2023</span>
+                <h5>Member (Norman Lab)</h5>
+                <p>Promoted to Member for project contributions, I took on Flutter 
+                  mobile development, mentoring others and creating a learning roadmap.</p>
+                <div class="experience-line-horizontal"></div>
+              </div>
+            </div>
+
+            <div class="experience-item">
+              <div class="experience-view">
+                <div class="experience-line"></div>
+              </div>
+              <div class="experience-description">
+                <span>May 2022 - Dec 2022</span>
+                <h5>Associate (Norman Lab)</h5>
+                <p>As an Associate, I explored website development 
+                  and UI/UX, building foundational skills for the lab.</p>
+                                <a
+                  href="https://ntl-ap-dev.vercel.app/"
+                  class="button-style icon-right"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  id="show-website-button"
+                >
+                  <span>NTL-AP Website</span>
+                  <img
+                    src="assets/icons/open-link-icon.svg"
+                    alt="Open Link Icon"
+                    class="icons"
+                  />
+                  
+                </a>
+                <div class="experience-line-horizontal"></div>
+              </div>
+            </div>
+
+            <div class="experience-item">
+              <div class="experience-view">
+                <div class="experience-line"></div>
+                <img
+                  src="assets/logos/aiesec.png"
+                  alt="aiesec-logo"
+                  class="experience-image"
+                  id="aiesec-logo"
+                />
+              </div>
+              <div class="experience-description">
+                <span>Feb 2022 - Feb 2023</span>
+                <h4>AIESEC in Amaravati</h4>
+                <p>AIESEC in Amaravati is a startup branch established under AIESEC Hyderabad, operating as part of a globally recognized, UN-accredited student organization dedicated to advancing the UN Sustainable Development Goals (SDGs) through youth leadership and impactful community projects.</p>
+                <span> Aug 2022 - Feb 2023</span>
+                <h5>Senior Manager, Outgoing Corporate Sector</h5>
+                <div class="experience-line-horizontal"></div>
+              </div>
+            </div>
+            <div class="experience-item">
+              <div class="experience-view">
+                <div class="experience-line"></div>
+              </div>
+              <div class="experience-description">
+                <span>Jul 2022 - Aug 2022</span>
+                <h5>Core Committee President for Recruitments</h5>
+                <div class="experience-line-horizontal"></div>
+              </div>
+            </div>
+            <div class="experience-item">
+              <div class="experience-view">
+                <div class="experience-line"></div>
+              </div>
+
+              <div
+                class="experience-description experience-description-final-item"
+              >
+                <span>Feb 2022 - Jul 2022</span>
+                <h5>Junior Manager, Outgoing Corporate Sector</h5>
+                  <a
+                  href="https://drive.google.com/file/d/1IEcojP0KDrlWlSF2kax-oHmMYNQbgsA3/view?usp=sharing"
+                  class="button-style icon-right"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  id="show-website-button"
+                >
+                  <span>EXPERIENCE LETTER OF AIESEC MEMBERSHIP</span>
+                  <img
+                    src="assets/icons/open-link-icon.svg"
+                    alt="Open Link Icon"
+                    class="icons"
+                  />
+                  
+                </a>
               </div>
             </div>
           </div>
@@ -405,18 +874,39 @@
                 <div class="experience-line"></div>
                 <img
                   src="assets/logos/srm-university-logo.png"
-                  alt="SRM University logo"
+                  alt="SRM University AP Logo"
                   class="experience-image"
                 />
               </div>
               <div class="experience-description">
-                <span>Sept 2021 - Dec 2025</span>
-                <h4>Bachelor of Technology in Computer Science</h4>
-                <h5>SRM University AP</h5>
+                <span>Sept 2021 - Jun 2025</span>
+<a href="https://srmap.edu.in/" target="_blank" rel="noopener noreferrer" style="color: white; text-decoration: underline;">
+  <h4 style="margin: 0;">SRM University AP</h4>
+</a>
+                <h5>Computer Science & Big Data Analytics</h5>
                 <p>
-                  Coursework: Data Structures, Algorithms, Operating Systems,
-                  Computer Networks, DBMS, Machine Learning, and more.
+                  Bachelors of Technology in Computer Science and Engineering.
                 </p>
+                <p>🥇 Awarded Gold Medal at SRM University’s 7th Research Day in the Biomedical category</p>
+<p>📄 Filed a patent during my 2nd year of university, which was recently accepted</p>
+<p>📚 Contributed to three research papers during my university studies</p>
+<p>🥉 Achieved 3rd place in a hackathon organized by IIITK</p>
+<p>🥈 Secured runner-up position in the Business Hackathon conducted by AIESEC in Amaravati</p>
+                <a
+                  href="https://srmap.edu.in/"
+                  class="button-style icon-right"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  id="show-grades-button"
+                >
+                  <span>SRM AP Website</span>
+                  <img
+                    src="assets/icons/open-link-icon.svg"
+                    alt="Open Link Icon"
+                    class="icons"
+                  />
+                  
+                </a>
                 <div class="experience-line-horizontal"></div>
               </div>
             </div>
@@ -425,15 +915,36 @@
                 <div class="experience-line"></div>
                 <img
                   src="assets/logos/indus.jpeg"
-                  alt="Indus International School logo"
+                  alt="Indus logo"
                   class="experience-image"
+                  id="Indus-logo"
                 />
               </div>
               <div class="experience-description">
                 <span>Jul 2021</span>
-                <h4>12th Standard, International Baccalaureate</h4>
-                <h5>Indus International School of Hyderabad</h5>
+<a href="https://hyderabad.indusschool.com/" style="color: white; text-decoration: underline;" target="_blank" rel="noopener noreferrer">
+  <h4 style="margin: 0;">Indus International School of Hyderabad</h4>
+</a>
+
+                <h5>12th Standard, International Baccalaureate</h5>
                 <p>Percentage: 84%</p>
+                <p>🌍 Received the International Baccalaureate Diploma Programme Certificate, an internationally recognized academic qualification</p>
+                <p>🌐 Designed and launched my first fully functional hosted website during the COVID-19 period</p>
+
+                <a
+                  href="https://hyderabad.indusschool.com/"
+                  class="button-style icon-right"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  id="show-grades-button"
+                >
+                <span>IISH Website</span>
+                  <img
+                    src="assets/icons/open-link-icon.svg"
+                    alt="Open Link Icon"
+                    class="icons"
+                  />
+                </a>
                 <div class="experience-line-horizontal"></div>
               </div>
             </div>
@@ -441,240 +952,766 @@
               <div class="experience-view">
                 <div class="experience-line"></div>
                 <img
-                  src="assets/logos/Conakry.jpg"
-                  alt="American International School of Conakry logo"
+                  src="assets/logos/cam2.png"
+                  alt="Cambridge University Logo"
                   class="experience-image"
+                />
+              </div>
+              <div class="experience-description">
+                <span>Sept 2021 - Jun 2025</span>
+              <a 
+                href="https://drive.google.com/file/d/16lauLHR0-gmtss3a17Fv-DyyfM6L1saM/view?usp=sharing" 
+                target="_blank" 
+                rel="noopener noreferrer" 
+                style="color: white; text-decoration: underline;"
+              >
+        <h4 style="margin: 0;">Cambridge University</h4>
+</a>
+                <h5>
+                  Summer School Computer Science at Sidney Sussex College,
+                  Cambridge University
+                </h5>
+
+                <p>This Computer Science course provided a broad overview of key areas in computing, 
+                  combining theoretical lectures with practical programming exercises and projects, giving students 
+                  foundational knowledge and hands-on experience similar to an undergraduate CS degree.</p>
+                
+                <a
+                  href="https://drive.google.com/file/d/16lauLHR0-gmtss3a17Fv-DyyfM6L1saM/view?usp=sharing"
+                  class="button-style icon-right"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  id="Graded Evaluation by Mentor"
+                >
+                  <span>Graded Evaluation by Mentor</span>
+                  <img
+                    src="assets/icons/open-link-icon.svg"
+                    alt="Open Link Icon"
+                    class="icons"
+                  />
+                </a>
+                <div class="experience-line-horizontal"></div>
+              </div>
+            </div>
+
+            <div class="experience-item">
+              <div class="experience-view">
+                <div class="experience-line"></div>
+                <img
+                  src="assets/logos/Conakry.jpg"
+                  alt="AISC Logo"
+                  class="experience-image"
+                  id="AISC-logo"
                 />
               </div>
               <div
                 class="experience-description experience-description-final-item"
               >
                 <span>Jun 2019</span>
-                <h4>10th Standard, MSA CESS Board</h4>
-                <h5>American International School of Conakry</h5>
+                <h4>American International School of Conakry</h4>
+                <h5>10th Standard, American Diploma, MSA CESS Board</h5>
                 <p>GPA: 3.9 / 4.0</p>
+                <p>🏆 Honored with the Director Gecko Award 2018 (Student of the Year)</p>
+                <p>🏅 Received the High School Historian Award</p>
+                <p>🤝 Completed 128.5 total hours of community service</p>
+                <p>🇫🇷 Earned the French Award for outstanding achievement in foreign language learning</p>
+                <p>💼 Served as Student Council Treasurer</p>
+                <a
+                  href="https://www.state.gov/countries-areas/guinea/"
+                  class="button-style icon-right"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  id="show-grades-button"
+                >
+                  <span>AISC Website (U.S Department of State)</span>
+                  <img
+                    src="assets/icons/open-link-icon.svg"
+                    alt="Open Link Icon"
+                    class="icons"
+                  />
+                </a>
+              </div>
+            </div>
+          </div>
+        </section>
+
+        <section id="Publications">
+          <h2>Research Publications & Patent</h2>
+          <p>
+            The following section highlights my published research papers, selected 
+            project reports and documentation, as well as my patent:
+          </p>
+
+          <div class="projects-container">
+            <!-- PROJECT: PLOS -->
+            <div class="project-item">
+              <img
+                src="assets/images/plos.jpg"
+                alt="PLOS image"
+                class="project-image"
+              />
+              <div class="project-description">
+                <div class="project-title">
+                  <h4>Machine learning in dentistry: a scoping review</h4>
+                  <h4>PLOS Digital Health (Q1 Journal)</h4>
+
+                  <h3>A Collaborative Research with Researchers From Harvard Medical School, MIT and AIIMS</h3>
+                </div>
+                <p>
+                 This review covers 280 machine learning studies in dentistry (2018–2023), emphasizing the field’s reliance on supervised 
+                 classification and AUROC for performance evaluation. 
+                 Despite these advances, only 20% reported calibration metrics, and few addressed outlier handling, fairness, or open data key ML 
+                 practices for trustworthy and reproducible results.
+                </p>
+
+
+                <a
+                  href="https://journals.plos.org/digitalhealth/article?id=10.1371/journal.pdig.0000940"
+                  class="button-style icon-right"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                >
+                  <span> PLOS Digital Health Journal</span>
+
+                  <img
+                    src="assets/logos/plos.jpg"
+                    alt="Open Link"
+                  />
+                  <img
+                    src="assets/icons/open-link-icon.svg"
+                    alt="Open Link"
+                  /> 
+                </a>
+
+                
+              </div>
+            </div>
+
+            <!-- PROJECT: Patent -->
+            <div class="project-item">
+              <img
+                src="assets/images/patent.jpg"
+                alt="Project Image"
+                class="project-image"
+              />
+              <div class="project-description">
+                <div class="project-title">
+                  <h4>A System & A Method for Monitoring & Insuring Medical Adherence (Patent & Paper)</h4>
+                </div>
+                <p>
+                  This Patent presents a smart medication reminder system aimed at supporting the elderly 
+                  by ensuring timely intake of medicines. It leverages machine learning, specifically a 
+                  CNN model, to convert handwritten prescriptions into clear digital text, reducing errors and 
+                  pharmacist workload. Automated reminders via SMS and voice calls are sent using Twilio API to improve medication adherence, enhancing patient 
+                  health outcomes and aligning with UN Sustainable Development Goals.
+                </p>
+
+                <a
+                  href="https://iprsearch.ipindia.gov.in/PublicSearch/PublicationSearch/ApplicationStatus"
+                  class="button-style icon-right"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                >
+                  <span>Intellectual Property Patent</span>
+                  <img
+                    src="assets/logos/ip.png"
+                    alt="Open Link (Sysselsättning vid studier rapport)"
+                  />
+                    <img
+                    src="assets/icons/open-link-icon.svg"
+                    alt="Open Link"
+                  />
+                </a>
+              </div>
+            </div>
+
+            <!-- PROJECT: Brain Tumor  -->
+            <div class="project-item">
+              <img
+                src="assets/images/ieee_1.jpg"
+                alt="Project Image"
+                class="project-image"
+              />
+              <div class="project-description">
+                <div class="project-title">
+                  <h4>An Experimental Study on Brain Tumor Detection using Deep Learning Techniques (Presented At: IIT-Mandi)</h4>
+                </div>
+               <h4>15th International Conference on Computing Communication and Networking Technologies (ICCCNT) |IIT-Mandi|</h4>
+                <p>
+                  In this study, advanced deep learning approaches, Inception V3, GoogLeNet, and VGG-19, were applied to MRI based brain tumor detection. We implemented decision level fusion to combine multiple model outputs, significantly boosting classification precision. The models achieved high accuracy (>98%) for tumor identification, underscoring the power of convolutional neural networks and transfer learning in medical image analysis and healthcare diagnostics.
+                </p>
+
+                <a
+                  href="https://ieeexplore.ieee.org/document/10725711"
+                  class="button-style icon-right"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                >
+                  <span>IEEE Publication</span>
+                  <img
+                    src="assets/logos/ieee.png"
+                    alt="Open Link"
+                  />
+                    <img
+                    src="assets/icons/open-link-icon.svg"
+                    alt="Open Link"
+                  />
+                </a>
+              </div>
+            </div>
+
+            <!-- PROJECT: Assistive Navigation in Dynamic Env -->
+            <div class="project-item">
+              <img
+                src="assets/images/icasi.jpg"
+                alt="Project Image"
+                class="project-image"
+              />
+              <div class="project-description">
+                <div class="project-title">
+                  <h4>A Comparative Analysis of Object Detection Models for
+Assistive Navigation in Dynamic Environments (Presented At: Tokyo, Japan)</h4>
+                </div>
+
+                <h4>11th IEEE International
+Conference on Applied System Innovation 2025 (IEEE-ICASI 2025) |Tokyo, Japan|</h4>
+
+
+                <p>
+                  This research evaluates leading object detection models including YOLOv11, DETR, CenterNet, and Faster R-CNN 
+                  using a custom dataset to improve assistive navigation for visually impaired individuals. By benchmarking these deep 
+                  learning architectures, our study demonstrates how model selection impacts real-time inference speed and accuracy. We 
+                  highlight YOLOv11’s suitability for edge-device deployment, emphasizing the importance of optimizing ML models for accessibility and dynamic real-world challenges
+                </p>
+
+                <a
+                  href="https://github.com/chaitanyasai-2021/Computer-Science-Lab-Archive"
+                  class="button-style icon-right"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                >
+                  <span>IEEE Publication</span>
+                  <img
+                    src="assets/logos/ieee.png"
+                    alt="Open Link"
+                  />
+                    <img
+                    src="assets/icons/open-link-icon.svg"
+                    alt="Open Link"
+                  />
+                </a>
+              </div>
+            </div>
+
+            <!-- PROJECT: Assistive Navigation -->
+            <div class="project-item">
+              <img
+                src="assets/images/cap.png"
+                alt="Project Image"
+                class="project-image"
+              />
+              <div class="project-description">
+                <div class="project-title">
+                  <h4>Assistive Navigation for the Visually Impaired Users Using YOLOv11 with Depth Enhancement and Object Detection</h4>
+                </div>
+                <p>
+                  This research develops a three-phase assistive navigation system for the visually impaired, benchmarking top object detection 
+                  models and selecting YOLOv11 for real-time edge deployment. It integrates YOLOv11 with monocular depth estimation (MiDaS) and 
+                  rule-based risk classification to provide multimodal hazard alerts. The system is optimized through model compression and pruning 
+                  for efficient, personalized use in dynamic environments.
+                </p>
+
+                <a
+                  href="https://github.com/chaitanyasai-2021/Computer-Science-Lab-Archive"
+                  class="button-style icon-right"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                >
+                  <span>Paper Link</span>
+                  <img
+                    src="assets/icons/open-link-icon.svg"
+                    alt="Open Link"
+                  />
+                </a>
+              </div>
+            </div>
+
+            <!-- PROJECT: Software Engineering -->
+            <div class="project-item">
+              <img
+                src="assets/images/real2.png"
+                alt="Project Image"
+                class="project-image"
+              />
+              <div class="project-description">
+                <div class="project-title">
+                  <h4>Software Engineering: Real Estate Marketplace Website Documentation</h4>
+                </div>
+                <p>
+                  Developed a full-stack real estate web application enabling secure property listing, advanced search and filtering, and seamless owner-buyer communication, leveraging JWT, Firebase authentication, and the MERN stack.
+                </p>
+
+                <a
+                  href="https://github.com/chaitanyasai-2021/Computer-Science-Lab-Archive"
+                  class="button-style icon-right"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                >
+                  <span>Paper Link</span>
+                  <img
+                    src="assets/icons/open-link-icon.svg"
+                    alt="Open Link"
+                  />
+                </a>
+              </div>
+            </div>
+
+            <!-- PROJECT: Mini Compiler -->
+            <div class="project-item">
+              <img
+                src="assets/images/cd.png"
+                alt="Project Image"
+                class="project-image"
+              />
+              <div class="project-description">
+                <div class="project-title">
+                  <h4>Mini Compiler Design Documentation</h4>
+                </div>
+                <p>
+                  Designed and implemented a compact compiler for a C language subset using Lex and Yacc, featuring lexical and syntax analysis, symbol table management, intermediate code optimization, and target code generation.
+                </p>
+
+                <a
+                  href="https://github.com/chaitanyasai-2021/Computer-Science-Lab-Archive"
+                  class="button-style icon-right"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                >
+                  <span>Paper Link</span>
+                  <img
+                    src="assets/icons/open-link-icon.svg"
+                    alt="Open Link"
+                  />
+                </a>
+              </div>
+            </div>
+
+            <!-- PROJECT: Fee Receipt Generator -->
+            <div class="project-item">
+              <img
+                src="assets/images/java.png"
+                alt="Project Image"
+                class="project-image"
+              />
+              <div class="project-description">
+                <div class="project-title">
+                  <h4>Fee Receipt Generator: Digital Receipt Management System Documentation</h4>
+                </div>
+                <p>
+                  A user-friendly Java-based application designed to automate and streamline the generation and management of fee receipts for educational institutions, replacing manual paperwork with efficient digital record-keeping and quick retrieval of information
+                </p>
+
+
+                <a
+                  href="https://github.com/chaitanyasai-2021/Computer-Science-Lab-Archive"
+                  class="button-style icon-right"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                >
+                  <span>Paper Link</span>
+                  <img
+                    src="assets/icons/open-link-icon.svg"
+                    alt="Open Link"
+                  />
+                </a>
               </div>
             </div>
           </div>
         </section>
 
         <section id="projects">
-          <h2>Project</h2>
+          <h2>Projects</h2>
           <p>
-            Here is a list of some projects I have created. More information
-            about specific technologies and features can be found in each
-            project's README file on GitHub!
+            Here are a few of my highlighted projects further details about specific technologies and 
+            features can be found in each project’s 
+            README on Github. A complete list of my projects is also available on my Github profile.
           </p>
           <div class="projects-container">
+            <!-- PROJECT: Job Portal System -->
             <div class="project-item">
               <img
-                src="assets/images/tickitoff-project.png"
-                alt="projektbild"
+                src="assets/images/django.jpg"
+                alt="Project Image"
                 class="project-image"
               />
               <div class="project-description">
                 <div class="project-title">
-                  <h4>TickItOff <span> - Bucket-list app</span></h4>
+                  <h4>Job Portal System <span> - Django Website</span></h4>
                 </div>
                 <p>
-                  Byggt med Kotlin/Jetpack Compose och implementerar notiser,
-                  social media integration, animationer och mer.
+                  The Job Portal System is a web application developed using the Django framework, designed to streamline the job search and recruitment process. This platform connects Job Seekers and Job Providers with distinct functionalities for each role. Administrators manage and oversee the platform to ensure its integrity and efficiency.
                 </p>
-                <p>
-                  Vinnare av bästa individuellt utvecklade appen i kursen
-                  Programmering för mobiler på Stockholms Universitet 🏆
-                </p>
+
+                <div class="project-tech-logos">
+                  <div class="tooltip">
+                    <img
+                      src="assets/logos/tech-logos/html5.svg"
+                      alt="HTML"
+                      class="html-logo"
+                    />
+                    <span class="tooltip-text">HTML</span>
+                  </div>
+                  <div class="tooltip">
+                    <img src="assets/logos/tech-logos/css.svg" alt="CSS" />
+                    <span class="tooltip-text">CSS</span>
+                  </div>
+                  <div class="tooltip">
+                    <img
+                      src="assets/logos/tech-logos/javascript.svg"
+                      alt="JavaScript"
+                    />
+                    <span class="tooltip-text">JavaScript</span>
+                  </div>
+                    <div class="tooltip">
+                    <img
+                      src="assets/logos/tech-logos/djangoproject-icon.svg"
+                      alt="HTML"
+                      class="html-logo"
+                    />
+                    <span class="tooltip-text">Django</span>
+                  </div>
+                </div>
                 <div class="project-buttons">
-                  <button class="link-button" id="project-1-github-button">
+                  <a
+                    href="https://github.com/chaitanyasai-2021/Django-Job-Portal"
+                    class="button-style"
+                    target="_blank"
+                    rel="noopener noreferrer"
+                  >
                     <img
                       src="assets/icons/github-icon.svg"
-                      alt="Github ikon"
+                      alt="Github Icon"
                       class="icons github-icon"
                     />
                     <span>Github</span>
-                  </button>
-                  <button
-                    class="link-button-icon-right"
-                    id="project-1-demo-button"
+                  </a>
+                  <a
+                    href="https://github.com/chaitanyasai-2021/Django-Job-Portal"
+                    class="button-style icon-right"
+                    target="_blank"
+                    rel="noopener noreferrer"
                   >
-                    <span>Demo (video)</span>
+                    <span>Open Link</span>
                     <img
-                      src="assets/icons/open-icon.svg"
-                      alt="Öppna länk ikon"
-                      class="icons"
+                      src="assets/icons/open-link-icon.svg"
+                      alt="Open Link (SortinLab)"
                     />
-                  </button>
+                  </a>
                 </div>
               </div>
             </div>
 
+            <!-- PROJECT: My Health Companion App -->
             <div class="project-item">
               <img
-                src="assets/images/midnattsloppet-project.png"
-                alt="projektbild"
+                src="assets/images/myhealth.png"
+                alt="Project Image"
                 class="project-image"
               />
               <div class="project-description">
                 <div class="project-title">
-                  <h4>Midnattsloppet Fortal <span> - För företag</span></h4>
+                  <h4>My Health Companion App <span> - Flutter Application related to Health</span></h4>
                 </div>
-                <p>
-                  Ett projekt skapat i samarbete med Midnattsloppet för att
-                  kombinera löpning och välgörenhet. Appen gör det möjligt för
-                  företag att skapa lag, samla in donationer till valda
-                  organisationer via swish, utmana andra lag och följa
-                  insamlingsresultat via topplistor och notifikationer – allt
-                  för att öka engagemang och bidra till en god sak.
-                </p>
-                <p>
-                  Byggd i projektgrupp på tio personer med Flutter och HTML+CSS
-                  för frontend och Java med MariaDB, Tomcat, Jenkins för
-                  backendhosting.
-                </p>
+<p><strong>My Health Companion App</strong><br>
+An all-in-one digital healthcare solution designed in response to challenges exposed by the COVID-19 pandemic.</p>
+
+<p>This app addresses critical issues like lost medical records, difficulty accessing medicines, lack of medical history during emergencies, medication mismanagement, delayed ambulance response, and accessibility for speech- or hearing-impaired individuals.</p>
+
+<p><strong>Key Features:</strong><br>
+📁 Access to past health records<br>
+💊 Nearby pharmacy locator with medicine availability<br>
+👨‍⚕️ Virtual and in-person doctor appointments<br>
+⏰ Prescription-based medicine reminders<br>
+🚑 One-tap ambulance and emergency help, including support for differently-abled users</p>
+
+<p>The app aligns with multiple <strong>UN Sustainable Development Goals (SDGs)</strong> by promoting health, accessibility, and well-being for all.</p>
+
+<p><strong>Status:</strong> UI prototypes for ambulance and doctor support are in progress.</p>
+
+                <div class="project-tech-logos">
+                  <div class="tooltip">
+                    <img
+                      src="assets/logos/tech-logos/figma.svg"
+                      alt="Figma"
+                    />
+                    <span class="tooltip-text">Figma</span>
+                  </div>
+                  <div class="tooltip">
+                    <img src="assets/logos/tech-logos/flutter.svg" alt="Java" />
+                    <span class="tooltip-text">Flutter</span>
+                  </div>
+                  <div class="tooltip">
+                    <img
+                      src="assets/logos/tech-logos/jenkins.svg"
+                      alt="Jenkins"
+                      class="jenkins-logo"
+                    />
+                    <span class="tooltip-text">Jenkins</span>
+                  </div>
+                </div>
                 <div class="project-buttons">
-                  <button class="link-button" id="project-3-github-button">
+                  <a
+                    href="https://github.com/chaitanyasai-2021/my-health-companion-app"
+                    class="button-style"
+                    target="_blank"
+                    rel="noopener noreferrer"
+                  >
                     <img
                       src="assets/icons/github-icon.svg"
-                      alt="Github ikon"
+                      alt="Github Icon"
                       class="icons github-icon"
                     />
                     <span>Github</span>
-                  </button>
-                  <button
-                    class="link-button-icon-right"
-                    id="project-3-demo-button"
-                  >
-                    <span>Demo (video)</span>
-                    <img
-                      src="assets/icons/open-icon.svg"
-                      alt="Öppna länk ikon"
-                      class="icons"
-                    />
-                  </button>
+                  </a>
                 </div>
               </div>
             </div>
+
+            <!-- PROJECT: Homanity -->
             <div class="project-item">
               <img
-                src="assets/images/gridguru-project.png"
-                alt="projektbild"
+                src="assets/images/homanity.png"
+                alt="Project Image"
                 class="project-image"
               />
               <div class="project-description">
                 <div class="project-title">
-                  <h4>GridGuru <span> - Formel 1 Quiz</span></h4>
+                  <h4>Homanity <span> Home Service Based Application</span></h4>
                 </div>
-                <p>
-                  Quizzen har en spelstruktur där frågorna spelas i set om 10,
-                  och användaren får sina poäng efter varje set.
-                </p>
-                <p>Byggt med HTML+CSS och vanilla JavaScript.</p>
-                <p>
-                  Vinnare för design i kursen Webbprogrammering 1 på Stockholms
-                  Universitet 🏆
-                </p>
+<p><strong>Homanity</strong> is a service-based application based in Delhi, designed exclusively for the city’s working-class professionals. Much like Urban Company, Homanity offers reliable home and office maintenance services—but with a hyperlocal focus on Delhi. It aims to support busy individuals who struggle to keep track of their household or corporate upkeep due to demanding work schedules.</p>
+
+                                <div class="project-tech-logos">
+                  <div class="tooltip">
+                    <img
+                      src="assets/logos/tech-logos/figma.svg"
+                      alt="Figma"
+                    />
+                    <span class="tooltip-text">Figma</span>
+                  </div>
+                  <div class="tooltip">
+                    <img src="assets/logos/tech-logos/flutter.svg" alt="Java" />
+                    <span class="tooltip-text">Flutter</span>
+                  </div>
+                  <div class="tooltip">
+                    <img src="assets/logos/tech-logos/mysql.svg" alt="MySQL" />
+                    <span class="tooltip-text">MySQL</span>
+                  </div>
+                </div>
                 <div class="project-buttons">
-                  <button class="link-button" id="project-2-github-button">
+                  <a
+                    href="https://github.com/chaitanyasai-2021/Home-Services-Application"
+                    class="button-style"
+                    target="_blank"
+                    rel="noopener noreferrer"
+                  >
                     <img
                       src="assets/icons/github-icon.svg"
-                      alt="Github ikon"
+                      alt="Github Icon"
                       class="icons github-icon"
                     />
                     <span>Github</span>
-                  </button>
-                  <button
-                    class="link-button-icon-right"
-                    id="project-2-demo-button"
-                  >
-                    <span>Demo (live)</span>
-                    <img
-                      src="assets/icons/open-icon.svg"
-                      alt="Öppna länk ikon"
-                      class="icons"
-                    />
-                  </button>
+                  </a>
+                  
                 </div>
               </div>
             </div>
+
+         
+
+            <!-- PROJECT: SE Project -->
             <div class="project-item">
               <img
-                src="assets/images/portfolio-project.png"
-                alt="projektbild"
+                src="assets/images/realw.png"
+                alt="Project Image"
                 class="project-image"
               />
               <div class="project-description">
                 <div class="project-title">
-                  <h4>Portfölj <span> - Denna portföljehemsidan</span></h4>
+                  <h4>SEEstate <span> - Real Estate Website Using React</span></h4>
                 </div>
                 <p>
-                  Byggt från scratch med endast HTML+CSS och vanilla JavaScript
-                  (inga frameworks eller andra bibliotek använda).
+                  The Real Estate Marketplace is a modern platform designed to connect property owners with potential buyers seamlessly. Built on the MERN stack (MongoDB, Express.js, React, Node.js), this secure and intuitive application streamlines property listing, search, and management.
                 </p>
+
+                <div class="project-tech-logos">
+                  <div class="tooltip">
+                    <img src="assets/logos/tech-logos/react.svg" alt="React" />
+                    <span class="tooltip-text">React</span>
+                  </div>
+                  <div class="tooltip">
+                    <img src="assets/logos/tech-logos/css.svg" alt="CSS" />
+                    <span class="tooltip-text">CSS</span>
+                  </div>
+                  <div class="tooltip">
+                    <img
+                      src="assets/logos/tech-logos/javascript.svg"
+                      alt="JavaScript"
+                    />
+                    <span class="tooltip-text">JavaScript</span>
+                  </div>
+                </div>
                 <div class="project-buttons">
-                  <button class="link-button" id="project-4-github-button">
+                  <a
+                    href="https://github.com/chaitanyasai-2021/Real-Estate-Marketplace"
+                    class="button-style"
+                    target="_blank"
+                    rel="noopener noreferrer"
+                  >
                     <img
                       src="assets/icons/github-icon.svg"
-                      alt="Github ikon"
+                      alt="Github Icon"
                       class="icons github-icon"
                     />
                     <span>Github</span>
-                  </button>
-                  <button
-                    class="link-button-icon-right"
-                    id="project-4-demo-button"
+                  </a>
+                  <a
+                    href="https://github.com/chaitanyasai-2021/Real-Estate-Marketplace"
+                    class="button-style icon-right"
+                    target="_blank"
+                    rel="noopener noreferrer"
                   >
-                    <span>Demo (live)</span>
+                    <span>Demo</span>
                     <img
-                      src="assets/icons/open-icon.svg"
-                      alt="Öppna länk ikon"
-                      class="icons"
+                      src="assets/icons/video-icon.svg"
+                      alt="Open Link (Real Estate Marketplace)"
                     />
-                  </button>
+                  </a>
                 </div>
               </div>
             </div>
+
+            <!-- PROJECT: PowerBI -->
             <div class="project-item">
               <img
-                src="assets/images/terratrivia-image.png"
-                alt="projektbild"
+                src="assets/images/analytics.png"
+                alt="Project Image"
                 class="project-image"
               />
               <div class="project-description">
                 <div class="project-title">
-                  <h4>TerraTrivia <span> - Ett geografispel</span></h4>
+                  <h4>Adventure Works Business Analysis <span> - Power BI</span></h4>
                 </div>
                 <p>
-                  TerraTrivia är ett frågesportsspel som testar din förmåga i
-                  geografi!
+                  Adventure Works Business Analysis project! This Power BI report delivers detailed insights into key aspects of the Adventure Works business, such as customer demographics, product performance, geographical sales distribution, and overall business health.
+                  
                 </p>
-                <p>
-                  Frågorna är uppdelade i tre stycken kategorier: länder,
-                  huvudstäder och landmärken.
-                </p>
-                <p>
-                  För varje kategori finns fem stycken svårighetsgrader, totalt
-                  finns det över 150 frågor att svara på. Lycka till!
-                </p>
+                <div class="project-tech-logos">
+                  <div class="tooltip">
+                    <img
+                      src="assets/logos/tech-logos/powerbi2.png"
+                      alt="HTML"
+                      class="html-logo"
+                    />
+                    <span class="tooltip-text">PowerBi</span>
+                  </div>
+                  <div class="tooltip">
+                    <img src="assets/logos/tech-logos/excel.png" alt="CSS" />
+                    <span class="tooltip-text">Excel</span>
+                  </div>
+                </div>
                 <div class="project-buttons">
-                  <button class="link-button" id="project-5-github-button">
+                  <a
+                    href="https://github.com/chaitanyasai-2021/Business-Sales-Analysis"
+                    class="button-style"
+                    target="_blank"
+                    rel="noopener noreferrer"
+                  >
                     <img
                       src="assets/icons/github-icon.svg"
-                      alt="Github ikon"
+                      alt="Github Icon"
                       class="icons github-icon"
                     />
                     <span>Github</span>
-                  </button>
-                  <button
-                    class="link-button-icon-right"
-                    id="project-5-demo-button"
+                  </a>
+                  <a
+                    href="https://github.com/chaitanyasai-2021/Business-Sales-Analysis"
+                    class="button-style icon-right"
+                    target="_blank"
+                    rel="noopener noreferrer"
                   >
-                    <span>Demo (live)</span>
+                    <span>Open Link</span>
                     <img
-                      src="assets/icons/open-icon.svg"
-                      alt="Öppna länk ikon"
-                      class="icons"
+                      src="assets/icons/open-link-icon.svg"
+                      alt="Open Link"
                     />
-                  </button>
+                  </a>
+                </div>
+              </div>
+            </div>
+
+          
+
+            <!-- PROJECT: Portfolio Website -->
+            <div class="project-item">
+              <img
+                src="assets/images/port.png"
+                alt="Project Image"
+                class="project-image"
+              />
+              <div class="project-description">
+                <div class="project-title">
+                  <h4>Portfolio <span> - Personal Portfolio Website</span></h4>
+                </div>
+                <p>
+                  Handcrafted from scratch using only HTML, CSS, and vanilla JavaScript – no frameworks or external libraries involved.
+                </p>
+                <div class="project-tech-logos">
+                  <div class="tooltip">
+                    <img
+                      src="assets/logos/tech-logos/html5.svg"
+                      alt="HTML"
+                      class="html-logo"
+                    />
+                    <span class="tooltip-text">HTML</span>
+                  </div>
+                  <div class="tooltip">
+                    <img src="assets/logos/tech-logos/css.svg" alt="CSS" />
+                    <span class="tooltip-text">CSS</span>
+                  </div>
+                  <div class="tooltip">
+                    <img
+                      src="assets/logos/tech-logos/javascript.svg"
+                      alt="JavaScript"
+                    />
+                    <span class="tooltip-text">JavaScript</span>
+                  </div>
+                </div>
+                <div class="project-buttons">
+                  <a
+                    href="https://github.com/chaitanyasai-2021/chaitanyasai-2021.github.io"
+                    class="button-style"
+                    target="_blank"
+                    rel="noopener noreferrer"
+                  >
+                    <img
+                      src="assets/icons/github-icon.svg"
+                      alt="Github Icon"
+                      class="icons github-icon"
+                    />
+                    <span>Github</span>
+                  </a>
+                  <a
+                    href="https://chaitanyasai-2021.github.io/"
+                    class="button-style icon-right"
+                    target="_blank"
+                    rel="noopener noreferrer"
+                  >
+                    <span>Open Link</span>
+                    <img
+                      src="assets/icons/open-link-icon.svg"
+                      alt="Open Link (Portfolio)"
+                    />
+                  </a>
                 </div>
               </div>
             </div>

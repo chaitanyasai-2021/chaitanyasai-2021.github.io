@@ -1,0 +1,441 @@
+/* Proficiencies */
+
+/* Dark Mode (standard) */
+:root {
+
+    /* Logo Colors */
+    --color-figma-border: rgb(39, 102, 60);
+    --color-figma-background: rgba(39, 102, 60, 0.685);
+
+    --color-java-border: rgb(102, 80, 39);
+    --color-java-background: rgba(102, 80, 39, 0.685);
+
+    --color-kotlin-border: rgb(97, 39, 102);
+    --color-kotlin-background: rgba(97, 39, 102, 0.685);
+
+    --color-flutter-border: rgb(39, 95, 102);
+    --color-flutter-background: rgba(39, 95, 102, 0.685);
+
+    --color-javascript-border: rgb(101, 102, 39);
+    --color-javascript-background: rgba(101, 102, 39, 0.685);
+
+    --color-react-border: rgb(39, 74, 102);
+    --color-react-background: rgba(39, 74, 102, 0.685);
+
+    --color-jetpack-compose-border: rgb(76, 166, 129);
+    --color-jetpack-compose-background: rgba(76, 166, 129, 0.685);
+
+    --color-html-border: rgb(150, 65, 26);
+    --color-html-background: rgba(150, 65, 26, 0.685);
+
+    --color-css-border: rgb(72, 45, 95);
+    --color-css-background: rgb(72, 45, 95, 0.685);
+
+    --color-python-border: rgb(0, 102, 153);
+    --color-python-background: rgba(0, 102, 153, 0.685);
+
+    --color-clang-border: rgb(0, 82, 153);
+    --color-clang-background: rgba(0, 82, 153, 0.685);
+
+    --color-cpp-border: rgb(0, 82, 153);
+    --color-cpp-background: rgba(0, 82, 153, 0.685);
+
+    --color-django-border: rgb(0, 82, 0);
+    --color-django-background: rgba(0, 132, 0, 0.685);
+
+    --color-pandas-border: rgb(82, 0, 102);
+    --color-pandas-background: rgba(146, 0, 182, 0.689); 
+
+    --color-numpy-border: rgb(0, 102, 82);
+    --color-numpy-background: rgba(0, 102, 82, 0.685);  
+
+    --color-matplotlib-border: rgb(102, 0, 51);
+    --color-matplotlib-background: rgba(102, 0, 51, 0.685);
+
+    --color-seaborn-border: rgb(102, 0, 102);
+    --color-seaborn-background: rgba(102, 0, 102, 0.685);
+
+    --color-scikit-border: rgb(0, 102, 0);
+    --color-scikit-background: rgba(0, 102, 0, 0.685);
+
+    --color-huggingface-border: rgb(102, 0, 51);
+    --color-huggingface-background: rgba(102, 0, 51, 0.685);
+
+    --color-pytorch-border: rgb(102, 0, 0);
+    --color-pytorch-background: rgba(102, 0, 0, 0.685);
+
+    --color-tensorflow-border: rgb(72, 45, 95);
+    --color-tensorflow-background: rgba(72, 45, 95, 0.685);
+
+    --color-keras-border: rgb(102, 0, 0);
+    --color-keras-background: rgba(102, 0, 0, 0.685);
+
+    --color-opencv-border: rgb(102, 0, 0);
+    --color-opencv-background: rgba(102, 0, 0, 0.685);
+
+    --color-yolo-border: rgb(102, 102, 0);
+    --color-yolo-background: rgba(102, 102, 0, 0.685);
+
+    --color-aws-border: rgb(204, 102, 0);
+    --color-aws-background: rgba(204, 102, 0, 0.685);
+
+    --color-oracle-border: rgb(204, 0, 0);
+    --color-oracle-background: rgba(204, 0, 0, 0.685);
+
+
+
+    --color-azure-border: rgb(0, 82, 153);
+    --color-azure-background: rgba(0, 82, 153, 0.685);  
+
+    --color-text-titles: rgb(255, 255, 255);
+    --color-element-background: rgb(30, 30, 30);    
+    --color-element-2-background: rgb(40, 40, 40);
+    --color-element-2-background-hover: rgb(50, 50, 50);
+    --color-element-hover-border: rgb(70, 70, 70);
+    --color-text-secondary: rgb(200, 200, 200);
+    --color-text-tertiary: rgb(150, 150, 150);
+    --color-text-placeholder: rgb(100, 100, 100);
+    --color-text-link: rgb(0, 153, 204);
+    --color-text-link-hover: rgb(0, 176, 230);
+    --color-text-link-active: rgb(0, 204, 255);
+    --color-text-error: rgb(255, 0, 0);
+    --color-text-success: rgb(0, 153, 0);
+    --color-text-warning: rgb(255, 153, 0);
+    --color-text-info: rgb(0, 102, 204);
+    --color-text-muted: rgb(100, 100, 100);
+    --color-text-highlight: rgb(255, 255, 0);
+    --color-text-accent: rgb(153, 0, 153);
+    --color-text-inverse: rgb(0, 0, 0);
+    --color-text-primary: rgb(255, 255, 255);
+    --color-text-secondary-light: rgb(200, 200, 200);
+    --color-text-tertiary-light: rgb(150, 150, 150);
+    --color-text-placeholder-light: rgb(100, 100, 100); 
+    --color-text-secondary-dark: rgb(150, 150, 150);
+    --color-text-tertiary-dark: rgb(100, 100, 100);
+    --color-text-placeholder-dark: rgb(50, 50, 50);
+    
+}
+
+:root.light-mode {
+    --color-figma-border: rgb(34, 153, 85);
+    --color-figma-background: rgb(63, 176, 118); /* +15% ljusare */
+
+    --color-java-border: rgb(173, 115, 34);
+    --color-java-background: rgb(197, 137, 58);
+
+    --color-kotlin-border: rgb(153, 34, 173);
+    --color-kotlin-background: rgb(176, 73, 196);
+
+    --color-flutter-border: rgb(34, 153, 173);
+    --color-flutter-background: rgb(62, 178, 196);
+
+    --color-javascript-border: rgb(180, 180, 34);
+    --color-javascript-background: rgb(206, 206, 62);
+
+    --color-react-border: rgb(34, 115, 173);
+    --color-react-background: rgb(60, 140, 197);
+
+    --color-jetpack-compose-border: rgb(60, 170, 120);
+    --color-jetpack-compose-background: rgb(84, 196, 147);
+
+    --color-html-border: rgb(200, 70, 25);
+    --color-html-background: rgb(224, 94, 49);
+
+    --color-css-border: rgb(110, 50, 190);
+    --color-css-background: rgb(132, 73, 210);
+
+    --color-python-border: rgb(0, 153, 204);
+    --color-python-background: rgb(0, 176, 230);
+
+    --color-clang-border: rgb(21, 0, 255);
+    --color-clang-background: rgb(51, 95, 255);
+
+    --color-cpp-border: rgb(0, 102, 204);
+    --color-cpp-background: rgb(0, 153, 255);
+
+    --color-django-border: rgb(0, 102, 0);
+    --color-django-background: rgb(0, 153, 0);
+
+    --color-pandas-border: rgb(102, 0, 153);
+    --color-pandas-background: rgb(153, 0, 204);
+
+    --color-matplotlib-border: rgb(153, 0, 76);
+    --color-matplotlib-background: rgb(204, 0, 102);
+
+    --color-seaborn-border: rgb(153, 0, 153);
+    --color-seaborn-background: rgb(204, 0, 204);
+
+    --color-scikit-border: rgb(0, 153, 0);
+    --color-scikit-background: rgb(0, 204, 0);
+
+    --color-huggingface-border: rgb(153, 0, 76);
+    --color-huggingface-background: rgb(204, 0, 102);
+
+    --color-pytorch-border: rgb(153, 0, 0);
+    --color-pytorch-background: rgb(204, 0, 0);
+
+    --color-tensorflow-border: rgb(110, 50, 190);
+    --color-tensorflow-background: rgb(132, 73, 210);
+
+    --color-keras-border: rgb(153, 0, 0);
+    --color-keras-background: rgb(204, 0, 0);
+
+    --color-numpy-border: rgb(0, 153, 102);
+    --color-numpy-background: rgb(0, 204, 153);
+
+    --color-opencv-border: rgb(153, 0, 0);
+    --color-opencv-background: rgb(204, 0, 0);
+
+    --color-yolo-border: rgb(153, 153, 0);
+    --color-yolo-background: rgb(204, 204, 0);
+
+    --color-aws-border: rgb(255, 153, 0);
+    --color-aws-background: rgb(255, 204, 51);
+
+    --color-oracle-border: rgb(255, 0, 0);
+    --color-oracle-background: rgb(255, 51, 51);
+
+    --color-azure-border: rgb(0, 102, 204);
+    --color-azure-background: rgb(0, 153, 255);
+
+    --color-text-titles: rgb(255, 255, 255);
+    --color-element-background: rgb(30, 30, 30);
+    --color-element-2-background: rgb(40, 40, 40);
+    --color-element-2-background-hover: rgb(50, 50, 50);
+    --color-element-hover-border: rgb(70, 70, 70);
+    --color-text-secondary: rgb(200, 200, 200);
+    --color-text-tertiary: rgb(150, 150, 150);
+    --color-text-placeholder: rgb(100, 100, 100);
+    --color-text-link: rgb(0, 153, 204);
+    --color-text-link-hover: rgb(0, 176, 230);
+    --color-text-link-active: rgb(0, 204, 255);
+    --color-text-error: rgb(255, 0, 0);
+    --color-text-success: rgb(0, 153, 0);
+    --color-text-warning: rgb(255, 153, 0);
+    --color-text-info: rgb(0, 102, 204);
+    --color-text-muted: rgb(100, 100, 100);
+    --color-text-highlight: rgb(255, 255, 0);
+    --color-text-accent: rgb(153, 0, 153);
+    --color-text-inverse: rgb(0, 0, 0);
+    --color-text-primary: rgb(255, 255, 255);
+    --color-text-secondary-light: rgb(200, 200, 200);
+    --color-text-tertiary-light: rgb(150, 150, 150);
+    --color-text-placeholder-light: rgb(100, 100, 100); 
+}
+
+
+#proficiencies {
+    margin-bottom: -1rem;
+}
+
+.proficiency-container {
+    display: grid;
+    gap: 10px;
+    row-gap: 10px;
+    grid-template-columns: repeat(3, 1fr);
+    /* Default to 3 columns */
+}
+
+.proficiency-item {
+    display: flex;
+    /* Use flexbox to align logo and text horizontally */
+    flex-direction: row;
+    /* Align items in a row */
+    background-color: var(--color-element-2-background);
+    border-radius: 8px;
+    width: 100%;
+    padding: 0.5em;
+    align-items: center;
+    /* Vertically align logo and text */
+    box-sizing: border-box;
+}
+
+.proficiency-logo {
+    width: 40px;
+    height: 40px;
+    border-radius: 8px;
+    border-width: 4px;
+    border-style: solid;
+    padding: 0.2em;
+    flex-shrink: 0;
+    /* Prevent the logo from shrinking */
+}
+
+#figma-logo {
+    background-color: var(--color-figma-background);
+    border-color: var(--color-figma-border);
+}
+
+#python-logo {
+    background-color: var(--color-python-background);
+    border-color: var(--color-python-border);
+}
+
+#clang-logo {
+    background-color: var(--color-clang-background);
+    border-color: var(--color-clang-border);
+}
+
+#cpp-logo {
+    background-color: var(--color-cpp-background);
+    border-color: var(--color-cpp-border);
+}
+
+#django-logo {
+    background-color: var(--color-django-background);
+    border-color: var(--color-django-border);
+}
+
+#pandas-logo {
+    background-color: var(--color-pandas-background);
+    border-color: var(--color-pandas-border);
+}
+
+#numpy-logo {
+    background-color: var(--color-numpy-background);
+    border-color: var(--color-numpy-border);
+}
+#matplotlib-logo {
+    background-color: var(--color-matplotlib-background);
+    border-color: var(--color-matplotlib-border);
+}
+
+
+#seaborn-logo {
+    background-color: var(--color-seaborn-background);
+    border-color: var(--color-seaborn-border);
+}
+#scikit-logo {
+    background-color: var(--color-scikit-background);
+    border-color: var(--color-scikit-border);
+}
+#huggingface-logo {
+    background-color: var(--color-huggingface-background);
+    border-color: var(--color-huggingface-border);
+}
+#pytorch-logo {
+    background-color: var(--color-pytorch-background);
+    border-color: var(--color-pytorch-border);
+}
+#tensorflow-logo {
+    background-color: var(--color-tensorflow-background);
+    border-color: var(--color-tensorflow-border);
+}
+#keras-logo {
+    background-color: var(--color-keras-background);
+    border-color: var(--color-keras-border);
+}
+
+#opencv-logo {
+    background-color: var(--color-opencv-background);
+    border-color: var(--color-opencv-border);
+}
+
+#yolo-logo {
+    background-color: var(--color-yolo-background);
+    border-color: var(--color-yolo-border);
+}
+
+#aws-logo {
+    background-color: var(--color-aws-background);
+    border-color: var(--color-aws-border);
+}
+
+#oracle-logo {
+    background-color: var(--color-oracle-background);
+    border-color: var(--color-oracle-border);
+}
+
+#azure-logo {
+    background-color: var(--color-azure-background);
+    border-color: var(--color-azure-border);
+}
+
+#java-logo {
+    width: 34px;
+    height: 34px;
+    padding: 6px;
+    border-color: var(--color-java-border);
+    background-color: var(--color-java-background);
+}
+
+#kotlin-logo {
+    border-color: var(--color-kotlin-border);
+    background-color: var(--color-kotlin-background);
+    width: 32px;
+    height: 32px;
+    padding: 7px;
+}
+
+#flutter-logo {
+    border-color: var(--color-flutter-border);
+    background-color: var(--color-flutter-background);
+    width: 32px;
+    height: 32px;
+    padding: 7px;
+}
+
+#javascript-logo {
+    border-color: var(--color-javascript-border);
+    background-color: var(--color-javascript-background);
+    width: 32px;
+    height: 32px;
+    padding: 7px;
+}
+
+#react-logo {
+    border-color: var(--color-react-border);
+    background-color: var(--color-react-background);
+    width: 32px;
+    height: 32px;
+    padding: 7px;
+}
+
+#jetpack-compose-logo {
+    border-color: var(--color-jetpack-compose-border);
+    background-color: var(--color-jetpack-compose-background);
+    width: 32px;
+    height: 32px;
+    padding: 7px;
+}
+
+#html-logo {
+    border-color: var(--color-html-border);
+    background-color: var(--color-html-background);
+    width: 32px;
+    height: 32px;
+    padding: 7px;
+}
+
+#css-logo {
+    border-color: var(--color-css-border);
+    background-color: var(--color-css-background);
+    width: 32px;
+    height: 32px;
+    padding: 7px;
+}
+
+.proficience-description {
+    margin-left: 10px;
+    color: var(--color-text-titles);
+}
+
+.proficience-description h4 {
+    color: var(--color-text-titles);
+    margin: 0;
+    font-size: 16px;
+}
+
+.proficience-description p {
+    margin: 0;
+    font-size: 14px;
+    opacity: 0.8;
+    /* Dims paragraph text slightly */
+}
+
+.proficiency-item:hover {
+    background-color: var(--color-element-2-background-hover);
+    outline-width: 1px;
+    outline-color: var(--color-element-hover-border);
+    outline-style: solid;
+}
